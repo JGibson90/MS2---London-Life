@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>London Life</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">London Life</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Things to Do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Food and Drink</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Where to Stay</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Travel Information</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+    <section>
+        <div>
+            <!-- Hero GIF goes here -->
+        </div>
+        <div>
+            <h1 class="hero-quote">"When a man is tired of London, he is tired of life; 
+                for there is in London all that life can afford."</h1>
+            <h3>Samuel Johnson</h3>
+            <!-- Hero Quote goes here -->
+        </div>
+    </section>
+    <section>
+        <div>
+            <!-- Tiles go here -->
+        </div>
+    </section>
+    <section>
+        <div id="map">
+            <!-- Map API goes here -->
+        </div>
+    </section>
+    <section>
+        <!-- Signup form goes here -->
+    </section>
+    <footer>
+        <!-- Footer goes here -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function initMap(){
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 13,
+                center: {
+                    lat: 51.509865,
+                    lng:  -0.118092
+                }
+            });
+
+            // Things to do markers go here //
+
+            // sight seeing markers go here //
+
+            // big ben //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5007, lng:-0.1246},
+                map:map
+            })
+
+            // westminster abbey //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4987, lng:-0.1289},
+                map:map
+            })
+
+            // buckingham palace //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5014, lng:-0.1419},
+                map:map
+            })
+
+            // shard //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5045, lng:-0.0865},
+                map:map
+            })
+
+            // tower of london //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5081, lng:-0.0759},
+                map:map
+            })
+
+            //tower bridge //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5055, lng:-0.0754},
+                map:map
+            })
+
+            // london eye //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5033, lng:-0.1196},
+                map:map
+            })
+
+            // kensington palace //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5050, lng:-0.1877},
+                map:map
+            })
+
+            // british museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5194, lng:-0.1270},
+                map:map
+            })
+
+            // v & a museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4966, lng:-0.1722},
+                map:map
+            })
+
+            // natural history museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4967, lng:-0.1764},
+                map:map
+            })
+
+            // science museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4978, lng:-0.1745},
+                map:map
+            })
+
+            // brit transport museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5119, lng:-0.1216},
+                map:map
+            })
+
+            // st pauls cathedral //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5138, lng:-0.0984},
+                map:map
+            })
+
+            // kensington palace //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5138, lng:-0.0984},
+                map:map
+            })
+            
+            // zoo //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5353, lng:-0.1534},
+                map:map
+            })
+
+            // aqaurium //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5020, lng:-0.1192},
+                map:map
+            })
+
+            // trafalger square + national gallery //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5080, lng:-0.1283},
+                map:map
+            })
+
+            // national maritime museum //
+            var marker = new google.maps.Marker({
+                position: {lat:51.481111, lng:-0.005556},
+                map:map
+            })
+
+            // royal observatory + greenwich park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4769, lng:-0.0005},
+                map:map
+            })
+
+            // cutty sark //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4817, lng:-0.0108},
+                map:map
+            })
+
+            // hyde park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5073, lng:-0.1657},
+                map:map
+            })
+
+            // holland park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5032, lng:-0.2037},
+                map:map
+            })
+
+            // green park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5039, lng:-0.1439},
+                map:map
+            })
+
+            // st james park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5025, lng:-0.1348},
+                map:map
+            })
+
+            // borough market //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5055, lng:-0.0910},
+                map:map
+            })
+
+            // greenwich market //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4816, lng:-0.0090},
+                map:map
+            })
+
+            // portobello market //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5209, lng:-0.2091},
+                map:map
+            })
+
+            // camden market //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5414, lng:-0.1465},
+                map:map
+            })
+
+            // old spitalfields market //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5197, lng:-0.0755},
+                map:map
+            })
+
+            // covent garden //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5123, lng:-0.1230},
+                map:map
+            })
+
+
+            marker.addListener("click", function(){
+
+            })
+        }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaG1sngNCOlk9qLIZxGwUjiEFkIaPUtiQ&callback=initMap&libraries=&v=weekly" async
+    ></script>
+</body>
