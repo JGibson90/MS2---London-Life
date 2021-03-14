@@ -39,16 +39,70 @@
         <div>
             <!-- Hero GIF goes here -->
         </div>
-        <div>
+        <div class="quote-bg-img">
             <h1 class="hero-quote">"When a man is tired of London, he is tired of life; 
                 for there is in London all that life can afford."</h1>
-            <h3>Samuel Johnson</h3>
+            <h3 class="hero-person">Samuel Johnson</h3>
             <!-- Hero Quote goes here -->
         </div>
     </section>
     <section>
         <div>
             <!-- Tiles go here -->
+        </div>
+    </section>
+    <section>
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sightseeing
+            </button>
+            <div class="dropdown-menu">
+                <a id = "mark-1" href="">Big Ben</a>
+                <a id = "mark-2" href="">Westminster Abbey</a>
+                <a id = "mark-3" href="">Buckingham Palace</a>
+                <a id = "mark-4" href="">Shard</a>
+                <a id = "mark-5" href="">Tower of London</a>
+                <a id = "mark-6" href="">London Eye</a>
+                <a id = "mark-7" href="">Kensington Palace</a>
+                <a id = "mark-8" href="">St.Pauls Cathedral</a>
+                <a id = "mark-9" href="">Royal Observatory</a>
+                <a id = "mark-10" href="">Cutty Sark</a>
+                <a id = "mark-11" href="">Trafalger Square</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Museums and Attractions
+            </button>
+            <div class="dropdown-menu">
+                <a id = "mark-12" href="">British Museum</a>
+                <a id = "mark-13" href="">V & A museum</a>
+                <a id = "mark-14" href="">Natural History Museum</a>
+                <a id = "mark-15" href="">Science Museum</a>
+                <a id = "mark-16" href="">British Transport Museum</a>
+                <a id = "mark-17" href="">National Maritime Museum</a>
+                <a id = "mark-18" href="">London Zoo</a>
+                <a id = "mark-19" href="">London Aquarium</a>
+                <a id = "mark-20" href="">National Gallery</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Markets and Parks
+            </button>
+            <div class="dropdown-menu">
+                <a id = "mark-21" href="">Hyde Park</a>
+                <a id = "mark-22" href="">Regents Park</a>
+                <a id = "mark-23" href="">Holland Park</a>
+                <a id = "mark-24" href="">Green Park</a>
+                <a id = "mark-25" href="">St. James Park</a>
+                <a id = "mark-26" href="">Greenwich Park</a>
+                <a id = "mark-27" href="">Camden Market</a>
+                <a id = "mark-28" href="">Borough Market</a>
+                <a id = "mark-29" href="">Portobello Road Market</a>
+                <a id = "mark-30" href="">Old Spitalfields Market</a>
+                <a id = "mark-31" href="">Covent Garden Market</a>
+            </div>
         </div>
     </section>
     <section>
@@ -66,15 +120,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
+
         function initMap(){
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
+                zoom: 12,
                 center: {
                     lat: 51.509865,
                     lng:  -0.118092
                 }
             });
+        };
 
+        
             // Things to do markers go here //
 
             // sight seeing markers go here //
@@ -109,7 +166,7 @@
                 map:map
             })
 
-            //tower bridge //
+            // tower bridge //
             var marker = new google.maps.Marker({
                 position: {lat:51.5055, lng:-0.0754},
                 map:map
@@ -193,9 +250,15 @@
                 map:map
             })
 
-            // royal observatory + greenwich park //
+            // royal observatory //
             var marker = new google.maps.Marker({
                 position: {lat:51.4769, lng:-0.0005},
+                map:map
+            })
+
+            // greenwich park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.4769, lng:-0.0015},
                 map:map
             })
 
@@ -208,6 +271,12 @@
             // hyde park //
             var marker = new google.maps.Marker({
                 position: {lat:51.5073, lng:-0.1657},
+                map:map
+            })
+
+            // regents park //
+            var marker = new google.maps.Marker({
+                position: {lat:51.5313, lng:-0.1570},
                 map:map
             })
 
@@ -265,11 +334,173 @@
                 map:map
             })
 
+    //     var markers = [];
 
-            marker.addListener("click", function(){
+    //     let locations = [{
+    //         name: 'Big Ben',
+    //         lat:51.5007, 
+    //         lng:-0.1246
+    //     },
+    //     {
+    //         name: 'Westminster Abbey',
+    //         lat:51.4987, 
+    //         lng:-0.1289
+    //     },
+    //     {
+    //         name: 'Buckingham Palace',
+    //         lat:51.5014, 
+    //         lng:-0.1419
+    //     },
+    //     {
+    //         name: 'The Shard',
+    //         lat:51.5045, 
+    //         lng:-0.0865
+    //     },
+    //     {
+    //         name: 'The Tower of London',
+    //         lat:51.5081, 
+    //         lng:-0.0759
+    //     },
+    //     {
+    //         name: 'Tower Bridge',
+    //         lat:51.5055, 
+    //         lng:-0.0754
+    //     },
+    //     {
+    //         name: 'The London Eye',
+    //         lat:51.5033, 
+    //         lng:-0.1196
+    //     },
+    //     {
+    //         name: 'Kensington Palace',
+    //         lat:51.5050, 
+    //         lng:-0.1877
+    //     },
+    //     {
+    //         name: 'British Museum',
+    //         lat:51.5194, 
+    //         lng:-0.1270
+    //     },
+    //     {
+    //         name: 'V&A Museum',
+    //         lat:51.4966, 
+    //         lng:-0.1722
+    //     },
+    //     {
+    //         name: 'Natural History Museum',
+    //         lat:51.4967, 
+    //         lng:-0.1764
+    //     },
+    //     {
+    //         name: 'Science Museum',
+    //         lat:51.4978, 
+    //         lng:-0.1745
+    //     },
+    //     {
+    //         name: 'British Transport Museum',
+    //         lat:51.5119, 
+    //         lng:-0.1216
+    //     },
+    //     {
+    //         name: 'St. Pauls Cathedral',
+    //         lat:51.5138, 
+    //         lng:-0.0984
+    //     },
+    //     {
+    //         name: 'London Zoo',
+    //         lat:51.5353, 
+    //         lng:-0.1534
+    //     },
+    //     {
+    //         name: 'SEALIFE Aquarium',
+    //         lat:51.5020, 
+    //         lng:-0.1192
+    //     },
+    //     {
+    //         name: 'Trafalger Square',
+    //         lat:51.5080, 
+    //         lng:-0.1283
+    //     },
+    //     {
+    //         name:'National Maritime Museum',
+    //         lat:51.481111, 
+    //         lng:-0.005556
+    //     },
+    //     {
+    //         name:'Royal Observatory',
+    //         lat:51.4769, 
+    //         lng:-0.0005
+    //     },
+    //     {
+    //         name:'Greenwich Park',
+    //         lat:51.4769, 
+    //         lng:-0.0015
+    //     },
+    //     {
+    //         name:'The Cutty Sark',
+    //         lat:51.4817, 
+    //         lng:-0.0108
+    //     },
+    //     {
+    //         name:'Hyde Park',
+    //         lat:51.5073, 
+    //         lng:-0.1657
+    //     },
+    //     {
+    //         name:'Regents Park',
+    //         lat:51.5313, 
+    //         lng:-0.1570
+    //     },
+    //     {
+    //         name:'Holland Park',
+    //         lat:51.5032, 
+    //         lng:-0.2037
+    //     },
+    //     {
+    //         name:'Green Park',
+    //         lat:51.5039, 
+    //         lng:-0.1439
+    //     },
+    //     {
+    //         name:'St. James Park',
+    //         lat:51.5025, 
+    //         lng:-0.1348
+    //     },
+    //     {
+    //         name:'Borough Market',
+    //         lat:51.5055, 
+    //         lng:-0.0910
+    //     },
+    //     {
+    //         name:'Greenwich Market',
+    //         lat:51.4816, 
+    //         lng:-0.0090
+    //     },
+    //     {
+    //         name:'Portobello Road Market',
+    //         lat:51.5209, 
+    //         lng:-0.2091
+    //     },
+    //     {
+    //         name:'Camden Market',
+    //         lat:51.5414, 
+    //         lng:-0.1465
+    //     },
+    //     {
+    //         name:'Old Spitalfields Market',
+    //         lat:51.5197, lng:-0.0755
+    //     },
+    //     {
+    //         name:'Covent Garden Market',
+    //         lat:51.5123, 
+    //         lng:-0.1230
+    //     },
+    //     {
+    //         name:'National Gallery',
+    //         lat:51.5089, lng:-0.1283
+    //     },
+    // ];
 
-            })
-        }
     </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaG1sngNCOlk9qLIZxGwUjiEFkIaPUtiQ&callback=initMap&libraries=&v=weekly" async
