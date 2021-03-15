@@ -17,19 +17,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <option> class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></option>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Things to Do</a>
+        <option> class="nav-link" href="#">Things to Do</option>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Food and Drink</a>
+        <option> class="nav-link" href="#">Food and Drink</option>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Where to Stay</a>
+        <option> class="nav-link" href="#">Where to Stay</option>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Travel Information</a>
+        <option> class="nav-link" href="#">Travel Information</option>
       </li>
     </ul>
   </div>
@@ -52,38 +52,33 @@
         </div>
     </section>
     <section>
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sightseeing
-            </button>
-            <div class="dropdown-menu">
-                <a id = "mark-1" href="">Big Ben</a>
-                <a id = "mark-2" href="">Westminster Abbey</a>
-                <a id = "mark-3" href="">Buckingham Palace</a>
-                <a id = "mark-4" href="">Shard</a>
-                <a id = "mark-5" href="">Tower of London</a>
-                <a id = "mark-6" href="">London Eye</a>
-                <a id = "mark-7" href="">Kensington Palace</a>
-                <a id = "mark-8" href="">St.Pauls Cathedral</a>
-                <a id = "mark-9" href="">Royal Observatory</a>
-                <a id = "mark-10" href="">Cutty Sark</a>
-                <a id = "mark-11" href="">Trafalger Square</a>
-            </div>
-        </div>
+        <select id = mySelect onchange="myFunction()">
+            <option value = "mark-1">Big Ben</option>
+            <option value = "mark-2">Westminster Abbey</option>
+            <option value = "mark-3">Buckingham Palace</option>
+            <option value = "mark-4">Shard</option>
+            <option value = "mark-5">Tower of London</option>
+            <option value = "mark-6">London Eye</option>
+            <option value = "mark-7">Kensington Palace</option>
+            <option value = "mark-8">St.Pauls Cathedral</option>
+            <option value = "mark-9">Royal Observatory</option>
+            <option value = "mark-10">Cutty Sark</option>
+            <option value = "mark-11">Trafalger Square</option>
+        </select>
         <div class="btn-group">
             <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Museums and Attractions
             </button>
             <div class="dropdown-menu">
-                <a id = "mark-12" href="">British Museum</a>
-                <a id = "mark-13" href="">V & A museum</a>
-                <a id = "mark-14" href="">Natural History Museum</a>
-                <a id = "mark-15" href="">Science Museum</a>
-                <a id = "mark-16" href="">British Transport Museum</a>
-                <a id = "mark-17" href="">National Maritime Museum</a>
-                <a id = "mark-18" href="">London Zoo</a>
-                <a id = "mark-19" href="">London Aquarium</a>
-                <a id = "mark-20" href="">National Gallery</a>
+                <option id = "mark-12" href="">British Museum</option>
+                <option id = "mark-13" href="">V & A museum</option>
+                <option id = "mark-14" href="">Natural History Museum</option>
+                <option id = "mark-15" href="">Science Museum</option>
+                <option id = "mark-16" href="">British Transport Museum</option>
+                <option id = "mark-17" href="">National Maritime Museum</option>
+                <option id = "mark-18" href="">London Zoo</option>
+                <option id = "mark-19" href="">London Aquarium</option>
+                <option id = "mark-20" href="">National Gallery</option>
             </div>
         </div>
         <div class="btn-group">
@@ -91,17 +86,17 @@
                 Markets and Parks
             </button>
             <div class="dropdown-menu">
-                <a id = "mark-21" href="">Hyde Park</a>
-                <a id = "mark-22" href="">Regents Park</a>
-                <a id = "mark-23" href="">Holland Park</a>
-                <a id = "mark-24" href="">Green Park</a>
-                <a id = "mark-25" href="">St. James Park</a>
-                <a id = "mark-26" href="">Greenwich Park</a>
-                <a id = "mark-27" href="">Camden Market</a>
-                <a id = "mark-28" href="">Borough Market</a>
-                <a id = "mark-29" href="">Portobello Road Market</a>
-                <a id = "mark-30" href="">Old Spitalfields Market</a>
-                <a id = "mark-31" href="">Covent Garden Market</a>
+                <option id = "mark-21" href="">Hyde Park</option>
+                <option id = "mark-22" href="">Regents Park</option>
+                <option id = "mark-23" href="">Holland Park</option>
+                <option id = "mark-24" href="">Green Park</option>
+                <option id = "mark-25" href="">St. James Park</option>
+                <option id = "mark-26" href="">Greenwich Park</option>
+                <option id = "mark-27" href="">Camden Market</option>
+                <option id = "mark-28" href="">Borough Market</option>
+                <option id = "mark-29" href="">Portobello Road Market</option>
+                <option id = "mark-30" href="">Old Spitalfields Market</option>
+                <option id = "mark-31" href="">Covent Garden Market</option>
             </div>
         </div>
     </section>
@@ -131,6 +126,66 @@
             });
         };
 
+        function myFunction(){
+            var x = document.getElementById("mySelect").value;
+            console.log(x);
+        };
+
+        function initMap() {
+            // remove existing marker before placing the next one //
+            const myLatLng = function myFunction(){
+            var x = document.getElementById("mySelect").value;
+            console.log(x);
+            };
+
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: {
+                    lat: 51.509865,
+                    lng:  -0.118092
+                }
+            });
+            
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Hello World!",
+  });}
+
+
+            bigBenCoords = {lat:51.5007, lng:-0.1246}
+            westminsterAbbeyCoords = {lat:51.4987, lng:-0.1289}
+            buckinghamPalaceCoords = {lat:51.5014, lng:-0.1419}
+            theShardCoords = {lat:51.5045, lng:-0.0865}
+            towerOfLondonCoords = {lat:51.5081, lng:-0.0759}
+            towerBridgeCoords = {lat:51.5055, lng:-0.0754}
+            londonEyeCoords = {lat:51.5033, lng:-0.1196}
+            kensingtonPalaceCoords = {lat:51.5050, lng:-0.1877}
+            britishMuseumCoords = {lat:51.5194, lng:-0.1270}
+            vAndAMuseumCoords = {lat:51.4966, lng:-0.1722}
+            naturalHistoryMuseumCoords = {lat:51.4967, lng:-0.1764}
+            scienceMuseumCoords = {lat:51.4978, lng:-0.1745}
+            britishTransportMuseumCoords = {lat:51.5119, lng:-0.1216}
+            stPaulsCoords = {lat:51.5138, lng:-0.0984}
+            londonZooCoords = {lat:51.5353, lng:-0.1534}
+            londonAquariumCoords = {lat:51.5020, lng:-0.1192}
+            maritimeMuseumCoords = {lat:51.481111, lng:-0.005556}
+            royalObservatoryCoords = {lat:51.4769, lng:-0.0005}
+            greenwichParkCoords = {lat:51.4769, lng:-0.0015}
+            cuttySarkCoords = {lat:51.4817, lng:-0.0108}
+            hydeParkCoords = {lat:51.5073, lng:-0.1657}
+            regentsParkCoords = {lat:51.5313, lng:-0.1570}
+            hollandParkCoords = {lat:51.5032, lng:-0.2037}
+            greenParkCoords = {lat:51.5039, lng:-0.1439}
+            stJamesParkCoords = {lat:51.5025, lng:-0.1348}
+            boroughMarketCoords = {lat:51.5055, lng:-0.0910}
+            greenwichMarketCoords = {lat:51.4816, lng:-0.0090}
+            portobelloRoadMarketCoords = {lat:51.5209, lng:-0.2091}
+            camdenMarketCoords = {lat:51.5414, lng:-0.1465}
+            spitalfieldsMarketCoords = {lat:51.5197, lng:-0.0755}
+            camdenMarketCoords = {lat:51.5123, lng:-0.1230}
+            trafalgerSquareCoords = {lat:51.5080, lng:-0.1283}
+            nationalGalleryCoords = {lat:51.5089, lng:-0.1283}
         
             // Things to do markers go here //
 

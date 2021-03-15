@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     height: 80vh;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .hero-quote {
@@ -41,9 +42,11 @@ body {
 .dropdown-menu a {
     text-align: center;
     display: block;
+    padding: 10px;
     
 }
 
 #map {
     min-height: 600px;
+    margin-top: 20px;
 }
