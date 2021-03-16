@@ -53,10 +53,10 @@
     </section>
     <section>
         <select id = mySelect onchange="myFunction()">
-            <option value = "mark-1">Big Ben</option>
-            <option value = "mark-2">Westminster Abbey</option>
+            <option value = "india">Big Ben</option>
+            <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
             <option value = "mark-3">Buckingham Palace</option>
-            <option value = "mark-4">Shard</option>
+            <option value = "theShardCoords">Shard</option>
             <option value = "mark-5">Tower of London</option>
             <option value = "mark-6">London Eye</option>
             <option value = "mark-7">Kensington Palace</option>
@@ -126,17 +126,59 @@
             });
         };
 
+        var myCoordinates = {
+            "india" : {"lat":28.7041, "lng":77.1025},
+            "bigBenCoords" : {"lat":51.5007, "lng":-0.1246},
+            "westminsterAbbeyCoords" : {"lat":51.4987, "lng":-0.1289},
+            "buckinghamPalaceCoords" : {"lat":51.5014, "lng":-0.1419},
+            "theShardCoords" : {"lat":51.5045, "lng":-0.0865},
+            "towerOfLondonCoords" : {"lat":51.5081, "lng":-0.0759},
+            "towerBridgeCoords" : {"lat":51.5055, "lng":-0.0754},
+            "londonEyeCoords" : {"lat":51.5033, "lng":-0.1196},
+            "kensingtonPalaceCoords" : {"lat":51.5050, "lng":-0.1877},
+            "britishMuseumCoords" : {"lat":51.5194, "lng":-0.1270},
+            "vAndAMuseumCoords" : {"lat":51.4966, "lng":-0.1722},
+            "naturalHistoryMuseumCoords" : {"lat":51.4967, "lng":-0.1764},
+            "scienceMuseumCoords" : {"lat":51.4978, "lng":-0.1745},
+            "britishTransportMuseumCoords" : {"lat":51.5119, "lng":-0.1216},
+            "stPaulsCoords" : {"lat":51.5138, "lng":-0.0984},
+            "londonZooCoords" : {"lat":51.5353, "lng":-0.1534},
+            "londonAquariumCoords" : {"lat":51.5020, "lng":-0.1192},
+            "maritimeMuseumCoords" : {"lat":51.481111, "lng":-0.005556},
+            "royalObservatoryCoords" : {"lat":51.4769, "lng":-0.0005},
+            "greenwichParkCoords" : {"lat":51.4769, "lng":-0.0015},
+            "cuttySarkCoords" : {"lat":51.4817, "lng":-0.0108},
+            "hydeParkCoords" : {"lat":51.5073, "lng":-0.1657},
+            "regentsParkCoords" : {"lat":51.5313, "lng":-0.1570},
+            "hollandParkCoords" : {"lat":51.5032, "lng":-0.2037},
+            "greenParkCoords" : {"lat":51.5039, "lng":-0.1439},
+            "stJamesParkCoords" : {"lat":51.5025, "lng":-0.1348},
+            "boroughMarketCoords" : {"lat":51.5055, "lng":-0.0910},
+            "greenwichMarketCoords" : {"lat":51.4816, "lng":-0.0090},
+            "portobelloRoadMarketCoords" : {"lat":51.5209, "lng":-0.2091},
+            "camdenMarketCoords" : {"lat":51.5414, "lng":-0.1465},
+            "spitalfieldsMarketCoords" : {"lat":51.5197, "lng":-0.0755},
+            "camdenMarketCoords" : {"lat":51.5123, "lng":-0.1230},
+            "trafalgerSquareCoords" : {"lat":51.5080, "lng":-0.1283},
+            "nationalGalleryCoords" : {"lat":51.5089, "lng":-0.1283}
+}
+
         function myFunction(){
             var x = document.getElementById("mySelect").value;
-            console.log(x);
+            console.log(myCoordinates[x]);
+            return myCoordinates[x];
         };
+
+        
+
 
         function initMap() {
             // remove existing marker before placing the next one //
-            const myLatLng = function myFunction(){
-            var x = document.getElementById("mySelect").value;
-            console.log(x);
-            };
+            // const myLatLng = function myFunction(){
+            // var x = document.getElementById("mySelect").value;
+            // console.log(x);
+            // console.log("init map")
+            // };
 
             const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 12,
@@ -145,250 +187,16 @@
                     lng:  -0.118092
                 }
             });
-            
+            var markerValue = myFunction();
+            console.log("marker value is", markerValue);
             new google.maps.Marker({
-                position: myLatLng,
+                position: myCoordinates["bigBenCoords"],
                 map,
                 title: "Hello World!",
   });}
 
 
-            bigBenCoords = {lat:51.5007, lng:-0.1246}
-            westminsterAbbeyCoords = {lat:51.4987, lng:-0.1289}
-            buckinghamPalaceCoords = {lat:51.5014, lng:-0.1419}
-            theShardCoords = {lat:51.5045, lng:-0.0865}
-            towerOfLondonCoords = {lat:51.5081, lng:-0.0759}
-            towerBridgeCoords = {lat:51.5055, lng:-0.0754}
-            londonEyeCoords = {lat:51.5033, lng:-0.1196}
-            kensingtonPalaceCoords = {lat:51.5050, lng:-0.1877}
-            britishMuseumCoords = {lat:51.5194, lng:-0.1270}
-            vAndAMuseumCoords = {lat:51.4966, lng:-0.1722}
-            naturalHistoryMuseumCoords = {lat:51.4967, lng:-0.1764}
-            scienceMuseumCoords = {lat:51.4978, lng:-0.1745}
-            britishTransportMuseumCoords = {lat:51.5119, lng:-0.1216}
-            stPaulsCoords = {lat:51.5138, lng:-0.0984}
-            londonZooCoords = {lat:51.5353, lng:-0.1534}
-            londonAquariumCoords = {lat:51.5020, lng:-0.1192}
-            maritimeMuseumCoords = {lat:51.481111, lng:-0.005556}
-            royalObservatoryCoords = {lat:51.4769, lng:-0.0005}
-            greenwichParkCoords = {lat:51.4769, lng:-0.0015}
-            cuttySarkCoords = {lat:51.4817, lng:-0.0108}
-            hydeParkCoords = {lat:51.5073, lng:-0.1657}
-            regentsParkCoords = {lat:51.5313, lng:-0.1570}
-            hollandParkCoords = {lat:51.5032, lng:-0.2037}
-            greenParkCoords = {lat:51.5039, lng:-0.1439}
-            stJamesParkCoords = {lat:51.5025, lng:-0.1348}
-            boroughMarketCoords = {lat:51.5055, lng:-0.0910}
-            greenwichMarketCoords = {lat:51.4816, lng:-0.0090}
-            portobelloRoadMarketCoords = {lat:51.5209, lng:-0.2091}
-            camdenMarketCoords = {lat:51.5414, lng:-0.1465}
-            spitalfieldsMarketCoords = {lat:51.5197, lng:-0.0755}
-            camdenMarketCoords = {lat:51.5123, lng:-0.1230}
-            trafalgerSquareCoords = {lat:51.5080, lng:-0.1283}
-            nationalGalleryCoords = {lat:51.5089, lng:-0.1283}
-        
-            // Things to do markers go here //
-
-            // sight seeing markers go here //
-
-            // big ben //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5007, lng:-0.1246},
-                map:map
-            })
-
-            // westminster abbey //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4987, lng:-0.1289},
-                map:map
-            })
-
-            // buckingham palace //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5014, lng:-0.1419},
-                map:map
-            })
-
-            // shard //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5045, lng:-0.0865},
-                map:map
-            })
-
-            // tower of london //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5081, lng:-0.0759},
-                map:map
-            })
-
-            // tower bridge //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5055, lng:-0.0754},
-                map:map
-            })
-
-            // london eye //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5033, lng:-0.1196},
-                map:map
-            })
-
-            // kensington palace //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5050, lng:-0.1877},
-                map:map
-            })
-
-            // british museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5194, lng:-0.1270},
-                map:map
-            })
-
-            // v & a museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4966, lng:-0.1722},
-                map:map
-            })
-
-            // natural history museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4967, lng:-0.1764},
-                map:map
-            })
-
-            // science museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4978, lng:-0.1745},
-                map:map
-            })
-
-            // brit transport museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5119, lng:-0.1216},
-                map:map
-            })
-
-            // st pauls cathedral //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5138, lng:-0.0984},
-                map:map
-            })
-
-            // kensington palace //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5138, lng:-0.0984},
-                map:map
-            })
             
-            // zoo //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5353, lng:-0.1534},
-                map:map
-            })
-
-            // aqaurium //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5020, lng:-0.1192},
-                map:map
-            })
-
-            // trafalger square + national gallery //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5080, lng:-0.1283},
-                map:map
-            })
-
-            // national maritime museum //
-            var marker = new google.maps.Marker({
-                position: {lat:51.481111, lng:-0.005556},
-                map:map
-            })
-
-            // royal observatory //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4769, lng:-0.0005},
-                map:map
-            })
-
-            // greenwich park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4769, lng:-0.0015},
-                map:map
-            })
-
-            // cutty sark //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4817, lng:-0.0108},
-                map:map
-            })
-
-            // hyde park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5073, lng:-0.1657},
-                map:map
-            })
-
-            // regents park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5313, lng:-0.1570},
-                map:map
-            })
-
-            // holland park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5032, lng:-0.2037},
-                map:map
-            })
-
-            // green park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5039, lng:-0.1439},
-                map:map
-            })
-
-            // st james park //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5025, lng:-0.1348},
-                map:map
-            })
-
-            // borough market //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5055, lng:-0.0910},
-                map:map
-            })
-
-            // greenwich market //
-            var marker = new google.maps.Marker({
-                position: {lat:51.4816, lng:-0.0090},
-                map:map
-            })
-
-            // portobello market //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5209, lng:-0.2091},
-                map:map
-            })
-
-            // camden market //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5414, lng:-0.1465},
-                map:map
-            })
-
-            // old spitalfields market //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5197, lng:-0.0755},
-                map:map
-            })
-
-            // covent garden //
-            var marker = new google.maps.Marker({
-                position: {lat:51.5123, lng:-0.1230},
-                map:map
-            })
-
     //     var markers = [];
 
     //     let locations = [{
