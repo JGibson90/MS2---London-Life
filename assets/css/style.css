@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
 /*----------------------------------------------Fonts*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Alegreya', sans-serif;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -25,26 +26,37 @@ body {
 
 .hero-quote {
     font-size: 350%;
-    font-weight: bolder;
+    font-weight: 600;
     padding: 20px;
-    padding-top: 200px;
+    padding-left: 350px;
+    padding-top: 100px;
     text-align: center;
+    position: relative;
+    color: #36454f;
 }
 
 .hero-person {
     font-family: 'Poppins', sans-serif;
     text-align: right;
     padding-right: 40px;
+    position: relative;
+    color: #36454f;
     }
 
 /*----------------------------------------------Dropdown menus*/
 
-.dropdown-menu a {
-    text-align: center;
-    display: block;
-    padding: 10px;
-    
+.dropdown-menus {
+    position: relative;
+    margin: auto;
+    width: 50%;
 }
+
+.dropdown-1, .dropdown-2, .dropdown-3 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 #map {
     min-height: 600px;

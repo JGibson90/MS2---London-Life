@@ -17,19 +17,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <option> class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></option>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <option> class="nav-link" href="#">Things to Do</option>
+        <a class="nav-link" href="#">Things to Do</a>
       </li>
       <li class="nav-item">
-        <option> class="nav-link" href="#">Food and Drink</option>
+        <a class="nav-link" href="#">Food and Drink</a>
       </li>
       <li class="nav-item">
-        <option> class="nav-link" href="#">Where to Stay</option>
+        <a class="nav-link" href="#">Where to Stay</a>
       </li>
       <li class="nav-item">
-        <option> class="nav-link" href="#">Travel Information</option>
+        <a class="nav-link" href="#">Travel Information</a>
       </li>
     </ul>
   </div>
@@ -40,9 +40,9 @@
             <!-- Hero GIF goes here -->
         </div>
         <div class="quote-bg-img">
-            <h1 class="hero-quote">"When a man is tired of London, he is tired of life; 
-                for there is in London all that life can afford."</h1>
-            <h3 class="hero-person">Samuel Johnson</h3>
+            <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
+                for there is in London all that life can afford"</em></h1>
+            <h3 class="hero-person"><em>Samuel Johnson</em></h3>
             <!-- Hero Quote goes here -->
         </div>
     </section>
@@ -52,53 +52,51 @@
         </div>
     </section>
     <section>
-        <select id = mySelect onchange="myFunction()">
-            <option value = "india">Big Ben</option>
-            <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
-            <option value = "mark-3">Buckingham Palace</option>
-            <option value = "theShardCoords">Shard</option>
-            <option value = "mark-5">Tower of London</option>
-            <option value = "mark-6">London Eye</option>
-            <option value = "mark-7">Kensington Palace</option>
-            <option value = "mark-8">St.Pauls Cathedral</option>
-            <option value = "mark-9">Royal Observatory</option>
-            <option value = "mark-10">Cutty Sark</option>
-            <option value = "mark-11">Trafalger Square</option>
-        </select>
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Museums and Attractions
-            </button>
-            <div class="dropdown-menu">
-                <option id = "mark-12" href="">British Museum</option>
-                <option id = "mark-13" href="">V & A museum</option>
-                <option id = "mark-14" href="">Natural History Museum</option>
-                <option id = "mark-15" href="">Science Museum</option>
-                <option id = "mark-16" href="">British Transport Museum</option>
-                <option id = "mark-17" href="">National Maritime Museum</option>
-                <option id = "mark-18" href="">London Zoo</option>
-                <option id = "mark-19" href="">London Aquarium</option>
-                <option id = "mark-20" href="">National Gallery</option>
-            </div>
+    <div class="dropdown-menus">
+        <div class="dropdown-1">
+            <select name = "Landmarks and Attractions" id = mySelect onchange="myFunction()">
+                <option value = "bigBenCoords">Big Ben</option>
+                <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
+                <option value = "buckinghamPalaceCoords">Buckingham Palace</option>
+                <option value = "theShardCoords">Shard</option>
+                <option value = "towerOfLondonCoords">Tower of London</option>
+                <option value = "londonEyeCoords">London Eye</option>
+                <option value = "kensingtonPalaceCoords">Kensington Palace</option>
+                <option value = "stPaulsCoords">St.Pauls Cathedral</option>
+                <option value = "royalObservatoryCoords">Royal Observatory</option>
+                <option value = "cuttySarkCoords">Cutty Sark</option>
+                <option value = "trafalgerSquareCoords">Trafalger Square</option>
+            </select>
         </div>
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Markets and Parks
-            </button>
-            <div class="dropdown-menu">
-                <option id = "mark-21" href="">Hyde Park</option>
-                <option id = "mark-22" href="">Regents Park</option>
-                <option id = "mark-23" href="">Holland Park</option>
-                <option id = "mark-24" href="">Green Park</option>
-                <option id = "mark-25" href="">St. James Park</option>
-                <option id = "mark-26" href="">Greenwich Park</option>
-                <option id = "mark-27" href="">Camden Market</option>
-                <option id = "mark-28" href="">Borough Market</option>
-                <option id = "mark-29" href="">Portobello Road Market</option>
-                <option id = "mark-30" href="">Old Spitalfields Market</option>
-                <option id = "mark-31" href="">Covent Garden Market</option>
-            </div>
+        <div class="dropdown-2">
+            <select name = "Museums and Attractions" id = "mySelect" onchange = "myFunction()">
+                <option value = "britishMuseumCoords">British Museum</option>
+                <option value = "vAndAMuseumCoords">V & A museum</option>
+                <option value = "naturalHistoryMuseumCoords">Natural History Museum</option>
+                <option value = "scienceMuseumCoords">Science Museum</option>
+                <option value = "britishTransportMuseumCoords">British Transport Museum</option>
+                <option value = "maritimeMuseumCoords">National Maritime Museum</option>
+                <option value = "londonZooCoords">London Zoo</option>
+                <option value = "londonAquariumCoords">London Aquarium</option>
+                <option value = "nationalGalleryCoords">National Gallery</option>
+            </select>
         </div>
+        <div class="dropdown-3">
+            <select name = "Parks and Markets" id = mySelect onchange = "myFunction()">
+                <option id = "hydeParkCoords" href="">Hyde Park</option>
+                <option id = "regentsParkCoords" href="">Regents Park</option>
+                <option id = "hollandParkCoords" href="">Holland Park</option>
+                <option id = "greenParkCoords" href="">Green Park</option>
+                <option id = "stJamesParkCoords" href="">St. James Park</option>
+                <option id = "greenwichParkCoords" href="">Greenwich Park</option>
+                <option id = "camdenMarketCoords" href="">Camden Market</option>
+                <option id = "boroughMarketCoords" href="">Borough Market</option>
+                <option id = "portobelloRoadMarketCoords" href="">Portobello Road Market</option>
+                <option id = "spitalfieldsMarketCoords" href="">Old Spitalfields Market</option>
+                <option id = "coventGardenMarketCoords" href="">Covent Garden Market</option>
+            </select>
+        </div>
+    </div>
     </section>
     <section>
         <div id="map">
@@ -160,7 +158,8 @@
             "spitalfieldsMarketCoords" : {"lat":51.5197, "lng":-0.0755},
             "camdenMarketCoords" : {"lat":51.5123, "lng":-0.1230},
             "trafalgerSquareCoords" : {"lat":51.5080, "lng":-0.1283},
-            "nationalGalleryCoords" : {"lat":51.5089, "lng":-0.1283}
+            "nationalGalleryCoords" : {"lat":51.5089, "lng":-0.1283},
+            "coventGardenMarketCoords" : {"lat":51.5123,"lng":-0.1230}
 }
 
         function myFunction(){
@@ -191,8 +190,7 @@
             console.log("marker value is", markerValue);
             new google.maps.Marker({
                 position: myCoordinates["bigBenCoords"],
-                map,
-                title: "Hello World!",
+                map
   });}
 
 
