@@ -19,14 +19,14 @@ body {
 .quote-bg-img {
     background: url(../images/quote-bg-img.jpg);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .hero-quote {
     font-size: 350%;
-    font-weight: 600;
+    font-weight: 300;
     padding: 20px;
     padding-left: 350px;
     padding-top: 100px;
@@ -57,8 +57,48 @@ body {
     margin-right: 10px;
 }
 
-
+/*----------------------------------------------Map*/
 #map {
     min-height: 600px;
     margin-top: 20px;
+}
+
+/*----------------------------------------------Form*/
+
+.form {
+    background-color: aqua;
+}
+
+.form-header {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.form, input, label {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#submit {
+    margin-top: 30px;
+}
+/*----------------------------------------------Footer*/
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.social-links {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
 }
