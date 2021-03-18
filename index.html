@@ -11,101 +11,91 @@
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">London Life</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Things to Do</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Food and Drink</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Where to Stay</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Travel Information</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+            <a class="navbar-brand" id = "title" href="index.html">London Life</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#map-nav-link">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#form-nav-link">Sign Up</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <section>
-        <div>
-            <!-- Hero GIF goes here -->
-        </div>
         <div class="quote-bg-img">
             <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
                 for there is in London all that life can afford"</em></h1>
             <h3 class="hero-person"><em>Samuel Johnson</em></h3>
-            <!-- Hero Quote goes here -->
         </div>
     </section>
-    <section>
+    <section id="map-nav-link">
         <div>
-            <!-- Tiles go here -->
+            <h2 class="dropdown-heading">Select an option from one of the following menus to find out more!</h2>
         </div>
-    </section>
-    <section>
-    <div class="dropdown-menus">
-        <div class="dropdown-1">
-            <select name = "Landmarks and Attractions" id = location-select>
-                <option value = "bigBenCoords">Big Ben</option>
-                <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
-                <option value = "buckinghamPalaceCoords">Buckingham Palace</option>
-                <option value = "theShardCoords">Shard</option>
-                <option value = "towerOfLondonCoords">Tower of London</option>
-                <option value = "londonEyeCoords">London Eye</option>
-                <option value = "kensingtonPalaceCoords">Kensington Palace</option>
-                <option value = "stPaulsCoords">St.Pauls Cathedral</option>
-                <option value = "royalObservatoryCoords">Royal Observatory</option>
-                <option value = "cuttySarkCoords">Cutty Sark</option>
-                <option value = "trafalgerSquareCoords">Trafalger Square</option>
-            </select>
+        <div class="dropdown-menus">
+            <div class="dropdown-1">
+                <select class = "location-select" name = "Landmarks and Attractions" id = location-select>
+                    <option>---Landmarks---</option>
+                    <option value = "bigBenCoords">Big Ben</option>
+                    <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
+                    <option value = "buckinghamPalaceCoords">Buckingham Palace</option>
+                    <option value = "theShardCoords">Shard</option>
+                    <option value = "towerOfLondonCoords">Tower of London</option>
+                    <option value="towerBridgeCoords">Tower Bridge</option>
+                    <option value = "londonEyeCoords">London Eye</option>
+                    <option value = "kensingtonPalaceCoords">Kensington Palace</option>
+                    <option value = "stPaulsCoords">St.Pauls Cathedral</option>
+                    <option value = "royalObservatoryCoords">Royal Observatory</option>
+                    <option value = "cuttySarkCoords">Cutty Sark</option>
+                    <option value = "trafalgerSquareCoords">Trafalger Square</option>
+                </select>
+            </div>
+            <div class="dropdown-2">
+                <select class = "location-select" name = "Museums and Attractions" id = "location-select-2">
+                    <option>---Museums and Attractions---</option>
+                    <option value = "britishMuseumCoords">British Museum</option>
+                    <option value = "vAndAMuseumCoords">V & A museum</option>
+                    <option value = "naturalHistoryMuseumCoords">Natural History Museum</option>
+                    <option value = "scienceMuseumCoords">Science Museum</option>
+                    <option value = "britishTransportMuseumCoords">British Transport Museum</option>
+                    <option value = "maritimeMuseumCoords">National Maritime Museum</option>
+                    <option value = "londonZooCoords">London Zoo</option>
+                    <option value = "londonAquariumCoords">London Aquarium</option>
+                    <option value = "nationalGalleryCoords">National Gallery</option>
+                </select>
+            </div>
+            <div class="dropdown-3">
+                <select class = "location-select" name = "Parks and Markets" id = "location-select-3">
+                    <option>---Parks and Markets---</option>
+                    <option value = "hydeParkCoords">Hyde Park</option>
+                    <option value = "regentsParkCoords">Regents Park</option>
+                    <option value = "hollandParkCoords">Holland Park</option>
+                    <option value = "greenParkCoords">Green Park</option>
+                    <option value = "stJamesParkCoords">St. James Park</option>
+                    <option value = "greenwichParkCoords">Greenwich Park</option>
+                    <option value = "camdenMarketCoords">Camden Market</option>
+                    <option value = "boroughMarketCoords">Borough Market</option>
+                    <option value = "portobelloRoadMarketCoords">Portobello Road Market</option>
+                    <option value = "spitalfieldsMarketCoords">Old Spitalfields Market</option>
+                    <option value = "coventGardenMarketCoords">Covent Garden Market</option>
+                </select>
+            </div>
         </div>
-        <div class="dropdown-2">
-            <select name = "Museums and Attractions" id = "location-select-2">
-                <option value = "britishMuseumCoords">British Museum</option>
-                <option value = "vAndAMuseumCoords">V & A museum</option>
-                <option value = "naturalHistoryMuseumCoords">Natural History Museum</option>
-                <option value = "scienceMuseumCoords">Science Museum</option>
-                <option value = "britishTransportMuseumCoords">British Transport Museum</option>
-                <option value = "maritimeMuseumCoords">National Maritime Museum</option>
-                <option value = "londonZooCoords">London Zoo</option>
-                <option value = "londonAquariumCoords">London Aquarium</option>
-                <option value = "nationalGalleryCoords">National Gallery</option>
-            </select>
-        </div>
-        <div class="dropdown-3">
-            <select name = "Parks and Markets" id = "location-select-3">
-                <option value = "hydeParkCoords">Hyde Park</option>
-                <option value = "regentsParkCoords">Regents Park</option>
-                <option value = "hollandParkCoords">Holland Park</option>
-                <option value = "greenParkCoords">Green Park</option>
-                <option value = "stJamesParkCoords">St. James Park</option>
-                <option value = "greenwichParkCoords">Greenwich Park</option>
-                <option value = "camdenMarketCoords">Camden Market</option>
-                <option value = "boroughMarketCoords">Borough Market</option>
-                <option value = "portobelloRoadMarketCoords">Portobello Road Market</option>
-                <option value = "spitalfieldsMarketCoords">Old Spitalfields Market</option>
-                <option value = "coventGardenMarketCoords">Covent Garden Market</option>
-            </select>
-        </div>
-    </div>
     </section>
     <section>
         <div id="map">
-            <!-- Map API goes here -->
         </div>
     </section>
-    <section class="container">
-        <!-- Signup form goes here -->
+    <section id="form-nav-link" class="container">
     <div class="row">
         <div class="signup-form">
             <form class="form">
@@ -118,13 +108,12 @@
                 <input type="text" name="lname" id="lname">
                 <label for="email">Email Address:</label>
                 <input type="email" name="email" id="email">
-                <input type="submit" id="submit" value="Sign up!">
+                <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
             </form>
         </div>
     </div>
     </section>
     <footer class="footer container-fluid">
-        <!-- Footer goes here -->
         <div class="row social-links">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
@@ -141,443 +130,238 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
+    let markers = [];
+    const myCoordinates = { 
+        "bigBenCoords" : {
+        "lat": 51.5007, 
+        "lng": -0.1246,
+        'description':"Big Ben is a historic landmark in London and has become one of the major and most easily recognisable landmarks of the city. The name 'Big Ben' is the name for the clock in Elizabeth's Tower - the tallest tower in the Palace of Westminster. The clock weighs an impressive 13 tons."
+        },
+        
+        "westminsterAbbeyCoords" : {
+        "lat":51.4987, 
+        "lng":-0.1289,
+        'description':"Westminster Abbey, formally titled the Collegiate Church of Saint Peter at Westminster, is a large, mainly Gothic abbey church in the City of Westminster, London, England, just to the west of the Palace of Westminster. It is also where all of the British monarchs have been crowned - all the way from the time of William the Conqueror (except for Edward V and Edward VIII)."
+        },
+        
+        "buckinghamPalaceCoords":{
+        "lat":51.501399,
+        "lng":-0.141761,
+        'description':"Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning."
+        },
 
-const locationSelect = document.getElementById('location-select');
-const locationSelect2 = document.getElementById('location-select-2');
-const locationSelect3 = document.getElementById('location-select-3');
-const markers = [];
+        "theShardCoords":{
+        "lat":51.5045, 
+        "lng":-0.0865,
+        'description':"The Shard is one of the masterpieces of the architect Renzo Piano. Ever since the Shard opened in February 2013, the beautiful skyscraper has been a site that many visitors travelling to London want to see. The Shard stands at the height of 309.6 metres, making it the tallest building in the United Kingdom and the sixth-tallest building in all of Europe. When you are in London, there are only a handful of places that offer you with decent views of the city, and the Shard is one of them."
+        },
 
-const myCoordinates = { 
-    "bigBenCoords" : {
-    "lat": 51.5007, 
-    "lng": -0.1246},
-    "content" : "<h3>Big Ben</h3> <p>Big Ben is a historic landmark in London and has become one of the major and most easily recognisable landmarks of the city. The name 'Big Ben' is the name for the clock in Elizabeth's Tower - the tallest tower in the Palace of Westminster.</p>",
+        "towerOfLondonCoords":{
+        "lat":51.5081,
+        "lng":-0.0759,
+        'description':"The White Tower, popularly known as the Tower of London, is definitely one of the must-see historical landmarks in London. It was constructed almost 1000 years ago in 1097, and this old monument has been used as an execution site, prison, and royal residence. The walls of the Tower of London are rich in history, making it one of the most-visited landmarks in the city. Aside from the history lessons taught by the Tower, there are many other activities and sites for you to do and see once inside the walls."
+        },
 
-    "westminsterAbbeyCoords" : {
-      "lat":51.4987, 
-      "lng":-0.1289},
+        "towerBridgeCoords":{ 
+        "lat":51.5055, 
+        "lng":-0.0754,
+        'description':"Tower Bridge is one of the tourist attractions you can't afford to miss because it is one of the famous monuments in London. It was built between 1886 and 1894. The Bridge is one of the most-visited landmarks globally with more than 40,000 people using it daily."
+        },
 
-    "buckinghamPalaceCoords" : 
-    {"lat":51.5014, 
-    "lng":-0.1419},
+        "londonEyeCoords":{
+        "lat":51.5033, 
+        "lng":-0.1196,
+        'description':"The London Eye opened in December 1999, with official rides beginning in 2000. This is one of the more modern tourist attractions in London. You can locate the famous landmark in the heart of London, opposite the Palace of Westminster and Westminster Abbey. Looking at the London Eye for the first time, you might think it is just one large Ferris Wheel, but it is actually an Observation Wheel."
+        },
 
-    "theShardCoords" : 
-    {"lat":51.5045, 
-    "lng":-0.0865},
+        "kensingtonPalaceCoords" : 
+        {"lat":51.5050, 
+        "lng":-0.1877,
+        'description':"Kensington Palace is one of the historical landmarks of London, England. The famous rich history of the palace began when it was first built in 1605 by Sir George Coppin. The Palace was the birthplace of Queen Victoria, and today, it is the official London residence of the Duke and Duchess of Cambridge. Kensington Palace is a representation of over 400 years of royal history."
+        },
 
-    "towerOfLondonCoords" : 
-    {"lat":51.5081, 
-    "lng":-0.0759},
+        "britishMuseumCoords" : 
+        {"lat":51.5194, 
+        "lng":-0.1270,
+        'description':"The first thing you need to know about the British Museum is that it is the largest museum in England and also the oldest public museum in the world. It was established in 1753 with its first collection being that of the Irish Scientist Sir Hans Sloane. The Museum was opened to the public in 1759. It boasts of having collections of art from various parts of the world, including a collection of Roman, European, Etruscan, Middle Eastern and European galleries."
+        },
 
-    "towerBridgeCoords" : 
-    {"lat":51.5055, 
-    "lng":-0.0754},
+        "vAndAMuseumCoords" : 
+        {"lat":51.4966, 
+        "lng":-0.1722,
+        'description':"The V&A is the world’s leading museum of art and design, housing a permanent collection of over 2.3 million objects that span over 5,000 years of human creativity. The Museum holds many of the UK's national collections and houses some of the greatest resources for the study of architecture, furniture, fashion, textiles, photography, sculpture, painting, jewellery, glass, ceramics, book arts, Asian art and design, theatre and performance."
+        },
 
-    "londonEyeCoords" : 
-    {"lat":51.5033, 
-    "lng":-0.1196},
+        "naturalHistoryMuseumCoords" : 
+        {"lat":51.4967, 
+        "lng":-0.1764,
+        'description':"The Natural History Museum in London is one of the most impressive buildings in the city. It is home to more than 70 million objects, with at least thousands of items added each year. This makes the museum one of the largest collections of natural history in the world. The museum was founded in 1754, with the collections provided by Sir Hans Sloane. Sir Hans Sloane was the same man responsible for establishing the British Museum. He later realised that the natural history collection at the British Museum was not impressive enough, so he decided to fund a second one."
+        },
 
-    "kensingtonPalaceCoords" : 
-    {"lat":51.5050, 
-    "lng":-0.1877},
+        "scienceMuseumCoords" : 
+        {"lat":51.4978, 
+        "lng":-0.1745,
+        'description':"The Science Museum of London was founded in 1857, and it is one of the historical landmarks in London. It is the most-visited science and technology-related museum in Europe, with more than 3 million people coming through it annually. The museum has more than 15,000 science-related objects on display, including the famous Apollo 10 command capsule and Stephenson's Rocket."
+        },
 
-    "britishMuseumCoords" : 
-    {"lat":51.5194, 
-    "lng":-0.1270},
+        "britishTransportMuseumCoords" : 
+        {"lat":51.5119, 
+        "lng":-0.1216,
+        'description':"The famous transportation system in London is something that cannot be seen in every city in the world, and this is one way London stands out. The London Transport Museum has been in existence since the 1920s, and it contains 450,000 items collected over 200 years all about the transport history of the city. The transport museum is divided into many galleries. Starting from the first floor, the first thing you will notice is the 19th-century collection - from this floor onwards other major centuries are covered."
+        },
 
-    "vAndAMuseumCoords" : 
-    {"lat":51.4966, 
-    "lng":-0.1722},
+        "stPaulsCoords" : 
+        {"lat":51.5138, 
+        "lng":-0.0984,
+        'description':"St. Paul's Cathedral's construction started in 1675 and ended in 1710 by Sir Christopher Wren. It was designed in the baroque-architectural style. The same architect was in charge of the London Bridge and the Houses of Parliament. St. Paul's has been used as the location for many important events. For example, the wedding between Prince Charles and Diana in 1981 was held here, including the funeral of Winston Churchill and Margaret Thatcher."
+        },
 
-    "naturalHistoryMuseumCoords" : 
-    {"lat":51.4967, 
-    "lng":-0.1764},
+        "londonZooCoords" : 
+        {"lat":51.5353, 
+        "lng":-0.1534,
+        'description':"The ZSL London Zoo is the world’s oldest scientific zoo (under the Zoological Society of London) as it has been open since 1828, and houses one of the largest animal collections in the UK with over 756 different species living inside its walls."
+        },
 
-    "scienceMuseumCoords" : 
-    {"lat":51.4978, 
-    "lng":-0.1745},
+        "londonAquariumCoords" : 
+        {"lat":51.5020, "lng":-0.1192, 
+        'description':"SEA LIFE London Aquarium contains one of the largest collections of marine life from around the world anywhere in Europe. It opened in March 1997 as the London Aquarium and hosts about one million visitors each year."
+        },
 
-    "britishTransportMuseumCoords" : 
-    {"lat":51.5119, 
-    "lng":-0.1216},
+        "maritimeMuseumCoords" : 
+        {"lat":51.481111, "lng":-0.005556, 
+        'description':"The National Maritime Museum explores the naval and maritime history of Britain, which was for centuries one of the world’s leading sea powers. The exhibitions showcase everything from real-life vessels and model ships to nautical instruments, objects, manuscripts, and maritime-themed artworks from the likes of J.M.W. Turner."
+        },
 
-    "stPaulsCoords" : 
-    {"lat":51.5138, 
-    "lng":-0.0984},
+        "royalObservatoryCoords" : 
+        {"lat":51.4769, "lng":-0.0005, 
+        'description':"Rising like a beacon of time atop Greenwich Park, the Royal Observatory is home to the prime meridian (longitude 0° 0' 0'') and the Meridian Courtyard, where you can stand with your feet straddling the eastern and western hemispheres. You can also see the Great Equatorial Telescope (1893) inside the onion-domed observatory and explore space and time in the Weller Astronomy Galleries."
+        },
 
-    "londonZooCoords" : 
-    {"lat":51.5353, 
-    "lng":-0.1534},
-    
-    "londonAquariumCoords" : 
-    {"lat":51.5020, 
-    "lng":-0.1192},
+        "greenwichParkCoords" : 
+        {"lat":51.4769, "lng":-0.0015, 
+        'description':"Greenwich Park is one of London’s loveliest expanses of green, with a rose garden, picturesque walks, a 6th-century Anglo-Saxon burial ground and astonishing views of Canary Wharf from the crown of the hill. Covering 74 hectares, it's the oldest enclosed royal park and is partly the work of André Le Nôtre, the landscape architect who designed the palace gardens of Versailles. It's bisected by the imaginary meridian line and is also home to the Ranger's House and the Royal Observatory."
+        },
 
-    "maritimeMuseumCoords" : 
-    {"lat":51.481111, 
-    "lng":-0.005556},
+        "cuttySarkCoords" : 
+        {"lat":51.4817, "lng":-0.0108, 
+        'description':"The Cutty Sark is the only remaining original Clipper ship in the World and is preserved in Greenwich, London. She was built in 1869 and served as a merchant vessel, travelling throughout the world. The Cutty Sark is thought to be one of the most beautiful ships ever made and makes a striking backdrop to the London Marathon runners as they pass her on the course."
+        },
 
-    "royalObservatoryCoords" : 
-    {"lat":51.4769, 
-    "lng":-0.0005},
+        "hydeParkCoords" : 
+        {"lat":51.5073, "lng":-0.1657, 
+        'description':"Hyde Park opened to the general public in 1637, and this was by order of King Charles, but it was not the reason why the park came into existence. In 1536, the park was acquired by Henry VIII, the first member of the royal family. The primary reason he acquired this large area of space was to turn it into a hunting ground. Hyde Park covers a ground area of about 350 acres, serving as the habitat for over 4,000 animals alongside ornamental flower gardens and a large lake."
+        },
 
-    "greenwichParkCoords" : 
-    {"lat":51.4769, 
-    "lng":-0.0015},
+        "regentsParkCoords" : 
+        {"lat":51.5313, "lng":-0.1570, 
+        'description':"Just like Hyde Park, Regent's Park was also acquired by Henry VIII and used as a hunting area until 1649. In 1811, John Nash was hired by King George IV to redesign the park for the royal family, which lead to the building of various infrastructure found in the park today. Regent's Park was not opened to the public until around the 1930s, and it has been popular ever since. The beauty of the 395-acre park is enough for you to visit it. It is home to many wildlife creatures, boasting of 200 species of birds and more than 650 waterfowl."
+        },
 
-    "cuttySarkCoords" : 
-    {"lat":51.4817, 
-    "lng":-0.0108},
+        "hollandParkCoords" : 
+        {"lat":51.5032, "lng":-0.2037, 
+        'description':"Holland Park contains an extensive woodland for central London, and supports a surprising range of mammals, birds and insects, including peacocks. The park also has a Japanese garden, orangery, tennis courts and a cricket pitch."
+        },
 
-    "hydeParkCoords" : 
-    {"lat":51.5073, 
-    "lng":-0.1657},
+        "greenParkCoords" : 
+        {"lat":51.5039, "lng":-0.1439, 
+        'description':"Although situated so close to St James's Park, The Green Park is quite different in character. It is more peaceful with mature trees and grassland and is surrounded by Constitution Hill, Piccadilly and the Broad Walk. The Green Park was first recorded in 1554 as the place where a rebellion took place against the marriage of Mary I to Philip II of Spain. It was a famous duelling site until 1667 when Charles II bought an extra 40 acres and it became known as upper St James's Park."
+        },
 
-    "regentsParkCoords" : 
-    {"lat":51.5313, 
-    "lng":-0.1570},
+        "stJamesParkCoords" : 
+        {"lat":51.5025, "lng":-0.1348, 
+        'description':"St James’s Park includes The Mall and Horse Guards Parade, and is surrounded by landmarks such as Buckingham Palace, Clarence House and Whitehall. The park’s famous flower beds at the front of Buckingham Palace are a familiar backdrop to pageants including Trooping the Colour, as well as state visits and other ceremonial occasions."
+        },
 
-    "hollandParkCoords" : 
-    {"lat":51.5032, 
-    "lng":-0.2037},
+        "boroughMarketCoords" : 
+        {"lat":51.5055, "lng":-0.0910, 
+        'description':"Borough Market is London's oldest food market, which has been in existence for over a century and dates back to the year 1014. This market is not only popular in the UK, but it is also one of the most famous markets in the world. The present structure of the market was built during the 1850s. Borough Market was built in a way that the environment is always kept in check. For example, low-energy lighting is used, and rainwater is collected and used to water the plants."
+        },
 
-    "greenParkCoords" : 
-    {"lat":51.5039, 
-    "lng":-0.1439},
+        "greenwichMarketCoords" : 
+        {"lat":51.4816, "lng":-0.0090, 
+        'description':"Greenwich Market is a market hall known for its lively and artistic atmosphere. There are over 120 stands here, including antiques, works of art and handicrafts. You can also find books, clothes and jewelry here. The place is also known for kitchen stalls from almost all over the world and for concerts played by students of the nearby Trinity College of Music."
+        },
 
-    "stJamesParkCoords" : 
-    {"lat":51.5025, 
-    "lng":-0.1348},
+        "portobelloRoadMarketCoords" : 
+        {"lat":51.5209, "lng":-0.2091, 
+        'description':"Dating back to the 19th century, Portobello is one of London’s oldest markets and it provide the setting for the 1999 movie Notting Hill starring Hugh Grant and Julia Roberts. Renowned for its antique stalls, the market is in full swing on Saturdays when more than 1,500 stalls compete for your attention. The market also heaves with stalls selling everything from vintage clothes to jewellery, street food to artwork."
+        },
 
-    "boroughMarketCoords" : 
-    {"lat":51.5055, 
-    "lng":-0.0910},
+        "camdenMarketCoords" : 
+        {"lat":51.5414, "lng":-0.1465, 
+        'description':"Camden Market started off as a small arts and crafts fair in the backyard of Dingwalls. Originally it was temporary and only open on Sundays, however its popularity grew fast. Camden market has more than 1,000 places to shop, eat, drink and dance. Discover vintage fashion and original gift ideas, or simply pause for a bite to eat at one of the many cafes, bars and street-food stalls."
+        },
 
-    "greenwichMarketCoords" : 
-    {"lat":51.4816, 
-    "lng":-0.0090},
+        "spitalfieldsMarketCoords" : 
+        {"lat":51.5197, "lng":-0.0755, 
+        'description':"Spitalfields takes its name from the hospital and priory, St. Mary’s Spittel that was founded in 1197. Lying in the heart of the East End, it is an area known for its spirit and a strong sense of community. It was in a field next to the priory where the now-famous market first started in the thirteenth century."
+        },
 
-    "portobelloRoadMarketCoords" : 
-    {"lat":51.5209, 
-    "lng":-0.2091},
+        "trafalgerSquareCoords" : 
+        {"lat":51.5080, "lng":-0.1283, 
+        'description':"Trafalgar Square is a popular public square located in the City of Westminster, Central London. John Nash was the architect in charge of the square's design during the 1820s, and it was constructed in the 1830s. The public square is so popular to the extent that it has been featured in many award-winning movies, like the Children of Men, Casino Royale, and The Avengers. Trafalgar Square is home to other famous attractions, such as the National Gallery, Nelson's Column, and St. Martin-in-the-Fields."
+        },
 
-    "camdenMarketCoords" : 
-    {"lat":51.5414, 
-    "lng":-0.1465},
+        "nationalGalleryCoords" : 
+        {"lat":51.5089, "lng":-0.1283, 
+        'description':"The National Gallery is one of the most famous art museums in the world. Constructed in 1937, it attracts more than 4 million tourists yearly. Unlike many other museums, this one is free to enter, so you don't have to worry about paying an admission fee."
+        },
 
-    "spitalfieldsMarketCoords" : 
-    {"lat":51.5197, 
-    "lng":-0.0755},
+        "coventGardenMarketCoords" : 
+        {"lat":51.5123,"lng":-0.1230, 
+        'description':"Established in 1654 and set in London’s West End, Covent Garden is a major draw for visitors and Londoners who enjoy its many attractions, including shopping, theatre, restaurants, bars, history and culture."
+        },
 
-    "camdenMarketCoords" : 
-    {"lat":51.5414, 
-    "lng":-0.1465},
-
-    "trafalgerSquareCoords" : 
-    {"lat":51.5080, 
-    "lng":-0.1283},
-
-    "nationalGalleryCoords" : 
-    {"lat":51.5089, 
-    "lng":-0.1283},
-
-    "coventGardenMarketCoords" : 
-    {"lat":51.5123,
-    "lng":-0.1230}
-
-};
-
-function removeMarkers() {
-  markers.forEach(marker => {
-    marker.setMap(null); // Disconnect each marker.
-  });
-
-  markers.length = 0; // This empties the array.
-}
-
-function createMarker(coordinates, map) {
-  const marker = new google.maps.Marker({
-    position: coordinates,
-    animation: google.maps.Animation.DROP,
-    map
-  });
-
-  markers.push(marker); // Add the marker to the array to save the reference.
-}
-
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: {
-      lat: 51.509865,
-      lng:  -0.118092
     }
-  });
 
-  locationSelect.addEventListener('change', () => {
-    const location = locationSelect.value;
-    const coordinates = myCoordinates[location];
-
-    removeMarkers(); // First remove all markers.
-    createMarker(coordinates, map); // Then add the marker.
-  });
-
-  locationSelect2.addEventListener('change', () => {
-    const location = locationSelect2.value;
-    const coordinates = myCoordinates[location];
-
-    removeMarkers(); // First remove all markers.
-    createMarker(coordinates, map); // Then add the marker.
-  });
-
-  locationSelect3.addEventListener('change', () => {
-    const location = locationSelect3.value;
-    const coordinates = myCoordinates[location];
-
-    removeMarkers(); // First remove all markers.
-    createMarker(coordinates, map); // Then add the marker.
-  });
+    function initMap() {
+    const map = new google.maps.Map( document.getElementById("map"), {
+        zoom: 12,
+        center: {
+        lat:51.509865,
+        lng:-0.118092
+        }
+    });
 
 
-}
+    function removeMarkers() {
+        markers.forEach(marker => {
+        marker.setMap(null);
+        });
+        markers=[];
+    }
 
-//         var myCoordinates = {
-//             "bigBenCoords" : {"lat":51.5007, "lng":-0.1246},
-//             "westminsterAbbeyCoords" : {"lat":51.4987, "lng":-0.1289},
-//             "buckinghamPalaceCoords" : {"lat":51.5014, "lng":-0.1419},
-//             "theShardCoords" : {"lat":51.5045, "lng":-0.0865},
-//             "towerOfLondonCoords" : {"lat":51.5081, "lng":-0.0759},
-//             "towerBridgeCoords" : {"lat":51.5055, "lng":-0.0754},
-//             "londonEyeCoords" : {"lat":51.5033, "lng":-0.1196},
-//             "kensingtonPalaceCoords" : {"lat":51.5050, "lng":-0.1877},
-//             "britishMuseumCoords" : {"lat":51.5194, "lng":-0.1270},
-//             "vAndAMuseumCoords" : {"lat":51.4966, "lng":-0.1722},
-//             "naturalHistoryMuseumCoords" : {"lat":51.4967, "lng":-0.1764},
-//             "scienceMuseumCoords" : {"lat":51.4978, "lng":-0.1745},
-//             "britishTransportMuseumCoords" : {"lat":51.5119, "lng":-0.1216},
-//             "stPaulsCoords" : {"lat":51.5138, "lng":-0.0984},
-//             "londonZooCoords" : {"lat":51.5353, "lng":-0.1534},
-//             "londonAquariumCoords" : {"lat":51.5020, "lng":-0.1192},
-//             "maritimeMuseumCoords" : {"lat":51.481111, "lng":-0.005556},
-//             "royalObservatoryCoords" : {"lat":51.4769, "lng":-0.0005},
-//             "greenwichParkCoords" : {"lat":51.4769, "lng":-0.0015},
-//             "cuttySarkCoords" : {"lat":51.4817, "lng":-0.0108},
-//             "hydeParkCoords" : {"lat":51.5073, "lng":-0.1657},
-//             "regentsParkCoords" : {"lat":51.5313, "lng":-0.1570},
-//             "hollandParkCoords" : {"lat":51.5032, "lng":-0.2037},
-//             "greenParkCoords" : {"lat":51.5039, "lng":-0.1439},
-//             "stJamesParkCoords" : {"lat":51.5025, "lng":-0.1348},
-//             "boroughMarketCoords" : {"lat":51.5055, "lng":-0.0910},
-//             "greenwichMarketCoords" : {"lat":51.4816, "lng":-0.0090},
-//             "portobelloRoadMarketCoords" : {"lat":51.5209, "lng":-0.2091},
-//             "camdenMarketCoords" : {"lat":51.5414, "lng":-0.1465},
-//             "spitalfieldsMarketCoords" : {"lat":51.5197, "lng":-0.0755},
-//             "camdenMarketCoords" : {"lat":51.5414, "lng":-0.1465},
-//             "trafalgerSquareCoords" : {"lat":51.5080, "lng":-0.1283},
-//             "nationalGalleryCoords" : {"lat":51.5089, "lng":-0.1283},
-//             "coventGardenMarketCoords" : {"lat":51.5123,"lng":-0.1230}
-// }
+    function createMarker( coordinates, map, value ) {
+        const marker = new google.maps.Marker({
+        position: coordinates,
+        value:value,
+        animation: google.maps.Animation.DROP,
+        map
+        });
+        markers.push( marker );
 
-//         function myFunction(){
-//             var x = document.getElementById("mySelect").value;
-//             console.log(myCoordinates[x]);
-//             return myCoordinates[x];
-//         };
+        setTimeout(()=>{
+        let content=[myCoordinates[value].description].join(', ');
+        let infowindow=new google.maps.InfoWindow({maxWidth:400});
 
-//         function initMap() {
-//             // remove existing marker before placing the next one //
-//             // const myLatLng = function myFunction(){
-//             // var x = document.getElementById("mySelect").value;
-//             // console.log(x);
-//             // console.log("init map")
-//             // };
+        infowindow.setContent( content )
+        infowindow.setPosition( marker.position );
+        infowindow.open( map, marker );					
+        },1000);
 
-//             const map = new google.maps.Map(document.getElementById("map"), {
-//                 zoom: 12,
-//                 center: {
-//                     lat: 51.509865,
-//                     lng:  -0.118092
-//                 }
-//             });
-//             var markerValue = myFunction();
-//             console.log("marker value is", markerValue);
-//             new google.maps.Marker({
-//                 position: myCoordinates["bigBenCoords"],
-//                 map
-//             });
-//         }
+    }
 
-//         document.getElementById("selected").addEventListener("click", function(){console.log("did it work?!")}, false);
+    const changehandler=function(e){
+        const coordinates = myCoordinates[ this.value ];
+        removeMarkers(); 
+        createMarker(coordinates, map, this.value ); 
+    }
 
-
-    //     var markers = [];
-
-    //     let locations = [{
-    //         name: 'Big Ben',
-    //         lat:51.5007, 
-    //         lng:-0.1246
-    //     },
-    //     {
-    //         name: 'Westminster Abbey',
-    //         lat:51.4987, 
-    //         lng:-0.1289
-    //     },
-    //     {
-    //         name: 'Buckingham Palace',
-    //         lat:51.5014, 
-    //         lng:-0.1419
-    //     },
-    //     {
-    //         name: 'The Shard',
-    //         lat:51.5045, 
-    //         lng:-0.0865
-    //     },
-    //     {
-    //         name: 'The Tower of London',
-    //         lat:51.5081, 
-    //         lng:-0.0759
-    //     },
-    //     {
-    //         name: 'Tower Bridge',
-    //         lat:51.5055, 
-    //         lng:-0.0754
-    //     },
-    //     {
-    //         name: 'The London Eye',
-    //         lat:51.5033, 
-    //         lng:-0.1196
-    //     },
-    //     {
-    //         name: 'Kensington Palace',
-    //         lat:51.5050, 
-    //         lng:-0.1877
-    //     },
-    //     {
-    //         name: 'British Museum',
-    //         lat:51.5194, 
-    //         lng:-0.1270
-    //     },
-    //     {
-    //         name: 'V&A Museum',
-    //         lat:51.4966, 
-    //         lng:-0.1722
-    //     },
-    //     {
-    //         name: 'Natural History Museum',
-    //         lat:51.4967, 
-    //         lng:-0.1764
-    //     },
-    //     {
-    //         name: 'Science Museum',
-    //         lat:51.4978, 
-    //         lng:-0.1745
-    //     },
-    //     {
-    //         name: 'British Transport Museum',
-    //         lat:51.5119, 
-    //         lng:-0.1216
-    //     },
-    //     {
-    //         name: 'St. Pauls Cathedral',
-    //         lat:51.5138, 
-    //         lng:-0.0984
-    //     },
-    //     {
-    //         name: 'London Zoo',
-    //         lat:51.5353, 
-    //         lng:-0.1534
-    //     },
-    //     {
-    //         name: 'SEALIFE Aquarium',
-    //         lat:51.5020, 
-    //         lng:-0.1192
-    //     },
-    //     {
-    //         name: 'Trafalger Square',
-    //         lat:51.5080, 
-    //         lng:-0.1283
-    //     },
-    //     {
-    //         name:'National Maritime Museum',
-    //         lat:51.481111, 
-    //         lng:-0.005556
-    //     },
-    //     {
-    //         name:'Royal Observatory',
-    //         lat:51.4769, 
-    //         lng:-0.0005
-    //     },
-    //     {
-    //         name:'Greenwich Park',
-    //         lat:51.4769, 
-    //         lng:-0.0015
-    //     },
-    //     {
-    //         name:'The Cutty Sark',
-    //         lat:51.4817, 
-    //         lng:-0.0108
-    //     },
-    //     {
-    //         name:'Hyde Park',
-    //         lat:51.5073, 
-    //         lng:-0.1657
-    //     },
-    //     {
-    //         name:'Regents Park',
-    //         lat:51.5313, 
-    //         lng:-0.1570
-    //     },
-    //     {
-    //         name:'Holland Park',
-    //         lat:51.5032, 
-    //         lng:-0.2037
-    //     },
-    //     {
-    //         name:'Green Park',
-    //         lat:51.5039, 
-    //         lng:-0.1439
-    //     },
-    //     {
-    //         name:'St. James Park',
-    //         lat:51.5025, 
-    //         lng:-0.1348
-    //     },
-    //     {
-    //         name:'Borough Market',
-    //         lat:51.5055, 
-    //         lng:-0.0910
-    //     },
-    //     {
-    //         name:'Greenwich Market',
-    //         lat:51.4816, 
-    //         lng:-0.0090
-    //     },
-    //     {
-    //         name:'Portobello Road Market',
-    //         lat:51.5209, 
-    //         lng:-0.2091
-    //     },
-    //     {
-    //         name:'Camden Market',
-    //         lat:51.5414, 
-    //         lng:-0.1465
-    //     },
-    //     {
-    //         name:'Old Spitalfields Market',
-    //         lat:51.5197, lng:-0.0755
-    //     },
-    //     {
-    //         name:'Covent Garden Market',
-    //         lat:51.5123, 
-    //         lng:-0.1230
-    //     },
-    //     {
-    //         name:'National Gallery',
-    //         lat:51.5089, lng:-0.1283
-    //     },
-    // ];
-
-    </script>
+    document.querySelectorAll('select.location-select').forEach( sel=>{
+        sel.addEventListener('change',changehandler)
+    })
+    }
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaG1sngNCOlk9qLIZxGwUjiEFkIaPUtiQ&callback=initMap&libraries=&v=weekly" async>
 </script>
 </body>
