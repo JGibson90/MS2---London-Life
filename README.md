@@ -105,6 +105,8 @@ under the **GitHub pages** section
 ## Code
 - I used [Bootstrap 4](https://getbootstrap.com/) to make the site
 responsive on different devices.
+
+- I was provided the fix to add infoWindows to my Markers on Stack Overflow, you can view it [here.](https://stackoverflow.com/questions/66689094/how-can-i-add-info-windows-to-a-marker-event-listener)
  
 ## Images
 - The hero background image came from
