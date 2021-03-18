@@ -1,7 +1,7 @@
 # MS2---London-Life
 Second Milestone Project for Code Institute
 
- ![](assets/images/devices.png)
+ ![](assets/images/devices.PNG)
 
 I wanted to design a website with an interactive map at the heart of it. I chose the Google Maps API as it widely used around the world.
 
