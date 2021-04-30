@@ -44,7 +44,7 @@
         <div class="dropdown-menus">
             <div class="dropdown-1">
                 <select class = "location-select" name = "Landmarks and Attractions" id = location-select>
-                    <option>---Landmarks---</option>
+                    <option class="landmarks">---Landmarks---</option>
                     <option value = "bigBenCoords">Big Ben</option>
                     <option value = "westminsterAbbeyCoords">Westminster Abbey</option>
                     <option value = "buckinghamPalaceCoords">Buckingham Palace</option>
@@ -61,7 +61,7 @@
             </div>
             <div class="dropdown-2">
                 <select class = "location-select" name = "Museums and Attractions" id = "location-select-2">
-                    <option>---Museums and Attractions---</option>
+                    <option class="museums">---Museums and Attractions---</option>
                     <option value = "britishMuseumCoords">British Museum</option>
                     <option value = "vAndAMuseumCoords">V & A museum</option>
                     <option value = "naturalHistoryMuseumCoords">Natural History Museum</option>
@@ -75,7 +75,7 @@
             </div>
             <div class="dropdown-3">
                 <select class = "location-select" name = "Parks and Markets" id = "location-select-3">
-                    <option>---Parks and Markets---</option>
+                    <option class="parks">---Parks and Markets---</option>
                     <option value = "hydeParkCoords">Hyde Park</option>
                     <option value = "regentsParkCoords">Regents Park</option>
                     <option value = "hollandParkCoords">Holland Park</option>
@@ -103,11 +103,11 @@
                     happening around London!
                 </h3>
                 <label for="fname">First Name:</label>
-                <input type="text" name="fname" id="fname">
+                <input type="text" name="fname" id="fname" required>
                 <label for="lname">Last Name:</label>
-                <input type="text" name="lname" id="lname">
+                <input type="text" name="lname" id="lname" required>
                 <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
             </form>
         </div>
