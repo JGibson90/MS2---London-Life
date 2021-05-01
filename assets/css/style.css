@@ -99,6 +99,7 @@ body {
 
 .form {
     background-color: #36454f;
+    padding-top: 20px;
     padding-bottom: 30px;
     margin: auto;
     margin-left: 30px;
@@ -157,7 +158,12 @@ body {
 
 .social-links {
     text-align: center;
+    margin-top: 10px;
 } 
+
+.list-inline {
+    margin: 0;
+}
 
 .list-inline-item {
     font-size: 200%;
@@ -177,9 +183,16 @@ body {
     -o-transition: all 0.2s ease-in-out;
 }
 
+.copyright {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 5px;
+}
+
 /*----------------------------------------------Media Queries*/
 
 @media screen and (max-width:500px) {
+
     .navbar {
         max-width: 100%;
     }
@@ -190,12 +203,16 @@ body {
     }
 
     .dropdown-menus {
-        margin-left: 40px;
+        margin-left: 10px;
         margin-right: 20px;
     }
 
+    .dropdown-1, .dropdown-2, .dropdown-3 {
+        margin-bottom: 10px;
+    }
+
     .location-select {
-        width: 280px;
+        width: 200px;
     }
 
     .landmarks, .museums, .parks {
@@ -204,6 +221,7 @@ body {
 
     #map {
         max-width: 100%;
+        min-height: 430px;
     }
 
     .form {
@@ -232,10 +250,11 @@ body {
     .dropdown-menus {
         display: inline-block;
         text-align: center;
+        width: 100%;
     }
 
     .location-select {
-        width: 340px;
+        width: 220px;
     }
 
     .form {
