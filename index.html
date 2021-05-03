@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/c3f0c2a2e6.js" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_Ema93MrHgkhaKzeyzEF9K");
+        })();
+    </script>
     <title>London Life</title>
 </head>
 <body>
@@ -33,10 +39,10 @@
     </header>
     <section>
         <div class="quote-bg-img">
-            <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
-                for there is in London all that life can afford"</em></h1>
-            <h3 class="hero-person"><em>Samuel Johnson</em></h3>
         </div>
+        <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
+                for there is in London all that life can afford"</em></h1>
+        <h3 class="hero-person"><em>Samuel Johnson</em></h3>
     </section>
     <section id="map-nav-link">
         <div>
@@ -98,18 +104,26 @@
     </section>
     <section id="form-nav-link" class="container">
     <div class="row">
-        <div class="signup-form">
-            <form class="form">
-                <h3 class="form-header">Sign up to our monthly newsletter to keep up to date with the latest events 
-                    happening around London!
-                </h3>
-                <label for="fname">First Name:</label>
-                <input type="text" name="fname" id="fname" required>
-                <label for="lname">Last Name:</label>
-                <input type="text" name="lname" id="lname" required>
-                <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email" required>
-                <div id="form-button">
+        <div class="container signup-form">
+            <form class="row form" onsubmit="return sendMail(this);">
+                <h3 class="col-12 form-header">Sign up to our monthly newsletter!</h3>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="col-12" id="form-button">
                     <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
                 </div>
             </form>
@@ -137,4 +151,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaG1sngNCOlk9qLIZxGwUjiEFkIaPUtiQ&callback=initMap&libraries=&v=weekly" async>
 </script>
+<script src="assets/js/sendEmail.js"></script>
 </body>
