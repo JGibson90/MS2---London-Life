@@ -1,6 +1,6 @@
 function sendMail(form) {
     emailjs.send("gmail", "newsletter", {
-        "from_name": form.fname.value + lname.value,
+        "from_name": form.fname.value + " " + lname.value,
         "from_email": form.email.value,
         "phone_number": form.phone.value
     })
