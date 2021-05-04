@@ -1,4 +1,7 @@
+// Empty array waiting for the function createMarker to push the selected location to it
 let markers = [];
+
+// List of coordinates and matching description for each location
     const myCoordinates = { 
         "bigBenCoords" : {
         "lat": 51.5007, 
@@ -181,7 +184,7 @@ let markers = [];
         },
 
     }
-
+// Sets the initial map location over London
     function initMap() {
     const map = new google.maps.Map( document.getElementById("map"), {
         zoom: 12,
@@ -191,7 +194,7 @@ let markers = [];
         }
     });
 
-
+// Removes all markers from the map before adding a new one
     function removeMarkers() {
         markers.forEach(marker => {
         marker.setMap(null);
@@ -199,6 +202,7 @@ let markers = [];
         markers=[];
     }
 
+// Adds the marker to the map
     function createMarker( coordinates, map, value ) {
         const marker = new google.maps.Marker({
         position: coordinates,
@@ -208,6 +212,7 @@ let markers = [];
         });
         markers.push( marker );
 
+// Adds the info window to the corresponding marker
         setTimeout(()=>{
         let content=[myCoordinates[value].description].join(', ');
         let infowindow=new google.maps.InfoWindow({maxWidth:400});
@@ -218,13 +223,13 @@ let markers = [];
         },1000);
 
     }
-
+// Calls the previous functions
     const changehandler=function(e){
         const coordinates = myCoordinates[ this.value ];
         removeMarkers(); 
         createMarker(coordinates, map, this.value ); 
     }
-
+// Event listener to determine which location has been selected
     document.querySelectorAll('select.location-select').forEach( sel=>{
         sel.addEventListener('change',changehandler)
     })
