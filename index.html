@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="form-validation.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/c3f0c2a2e6.js" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
@@ -24,13 +25,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li data-toggle="collapse" data-target=".navbar-collapse" class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li data-toggle="collapse" data-target=".navbar-collapse" class="nav-item">
                     <a class="nav-link" href="#map-nav-link">Map</a>
                 </li>
-                <li class="nav-item">
+                <li data-toggle="collapse" data-target=".navbar-collapse" class="nav-item">
                     <a class="nav-link" href="#form-nav-link">Sign Up</a>
                 </li>
                 </ul>
@@ -38,7 +39,34 @@
         </nav>
     </header>
     <section>
-        <div class="quote-bg-img">
+        <div class="quote-bg-img" id="slideshow">
+            <!-- <div>
+                <img src="assets/images/quote-bg-img.jpg" alt="The London Eye by the River Thames">
+            </div>
+            <div>
+                <img src="assets/images/img2.jpg" alt="Tower Bridge at sunset">
+            </div>
+            <div>
+                <img src="assets/images/img3.jpg" alt="London skyline at sunset">
+            </div>
+            <div>
+                <img src="assets/images/img4.jpg" alt="Tower Bridge at Night">
+            </div>
+            <div>
+                <img src="assets/images/img5.jpg" alt="London train station">
+            </div>
+            <div>
+                <img src="assets/images/img6.jpg" alt="Quiet old London side street">
+            </div>
+            <div>
+                <img src="assets/images/img7.jpg" alt="View of St Pauls Cathedral from the Millenium Bridge">
+            </div>
+            <div>
+                <img src="assets/images/img8.jpg" alt="St Pauls Cathedral">
+            </div>
+            <div>
+                <img src="assets/images/img9.jpg" alt="London skyline during daytime">
+            </div> -->
         </div>
         <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
                 for there is in London all that life can afford"</em></h1>
@@ -67,8 +95,8 @@
                 </select>
             </div>
             <div class="dropdown-2">
-                <select class = "location-select" name = "Museums and Attractions" id = "location-select-2">
-                    <option class="museums">---Museums and Attractions---</option>
+                <select class = "location-select" name = "Attractions" id = "location-select-2">
+                    <option class="museums">---Attractions---</option>
                     <option value = "britishMuseumCoords">British Museum</option>
                     <option value = "vAndAMuseumCoords">V & A museum</option>
                     <option value = "naturalHistoryMuseumCoords">Natural History Museum</option>
@@ -81,8 +109,8 @@
                 </select>
             </div>
             <div class="dropdown-3">
-                <select class = "location-select" name = "Parks and Markets" id = "location-select-3">
-                    <option class="parks">---Parks and Markets---</option>
+                <select class = "location-select" name = "Parks/Markets" id = "location-select-3">
+                    <option class="parks">---Parks/Markets---</option>
                     <option value = "hydeParkCoords">Hyde Park</option>
                     <option value = "regentsParkCoords">Regents Park</option>
                     <option value = "hollandParkCoords">Holland Park</option>
@@ -106,25 +134,31 @@
     <div class="row">
         <div class="container signup-form">
             <form class="row form" onsubmit="return sendMail(this);">
-                <h3 class="col-12 form-header">Sign up to our monthly newsletter!</h3>
-                <div class="col-6 col-md-6 col-sm-12">
-                    <label for="fname">First Name:</label>
-                    <input type="text" name="fname" id="fname" required>
-                </div>
-                <div class="col-6 col-md-6 col-sm-12">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lname" required>
-                </div>
-                <div class="col-6 col-md-6 col-sm-12">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
-                </div>
-                <div class="col-6 col-md-6 col-sm-12">
-                    <label for="email">Email Address:</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="col-12" id="form-button">
-                    <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
+                <div class="col-12">
+                    <h3 class="form-header">Sign up to our monthly newsletter!</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="fname">First name:</label>
+                            <input type="text" class="form-control" id="fname" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lname">Last name:</label>
+                            <input type="text" class="form-control" id="lname" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="col-12" id="form-button">
+                        <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
+                    </div>
                 </div>
             </form>
         </div>
