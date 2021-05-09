@@ -150,6 +150,27 @@ body {
     border-color: #2E5476;
 }
 
+.modal {
+    color: #36454f;
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-content {
+    font-size: larger;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+#modal-close-button:hover {
+    background-color: #192E40;
+    border-color: #2E5476;
+}
+
 /*----------------------------------------------Footer*/
 
 .container-fluid {
@@ -246,6 +267,18 @@ body {
         text-align: center;
         margin-left: 0;
         padding-left: 0;
+    }
+
+    .modal-content {
+        max-height: 260px;
+    }
+
+    .modal-footer {
+        padding-top: 0;
+    }
+
+    .modal-footer button {
+        margin-top: 0;
     }
 }
 
