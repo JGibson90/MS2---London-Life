@@ -12,7 +12,7 @@ let markers = [];
         "westminsterAbbeyCoords" : {
         "lat":51.4987, 
         "lng":-0.1289,
-        'description':"Westminster Abbey, formally titled the Collegiate Church of Saint Peter at Westminster, is a large, mainly Gothic abbey church in the City of Westminster, London, England, just to the west of the Palace of Westminster. It is also where all of the British monarchs have been crowned - all the way from the time of William the Conqueror (except for Edward V and Edward VIII)."
+        'description':"Westminster Abbey, formally titled the Collegiate Church of Saint Peter at Westminster, is a large, mainly Gothic abbey church in the City of Westminster. It is also where all of the British monarchs have been crowned - all the way from the time of William the Conqueror (except for Edward V and Edward VIII)."
         },
         
         "buckinghamPalaceCoords":{
@@ -24,13 +24,13 @@ let markers = [];
         "theShardCoords":{
         "lat":51.5045, 
         "lng":-0.0865,
-        'description':"The Shard is one of the masterpieces of the architect Renzo Piano. Ever since the Shard opened in February 2013, the beautiful skyscraper has been a site that many visitors travelling to London want to see. The Shard stands at the height of 309.6 metres, making it the tallest building in the United Kingdom and the sixth-tallest building in all of Europe. When you are in London, there are only a handful of places that offer you with decent views of the city, and the Shard is one of them."
+        'description':"The Shard is one of the masterpieces of the architect Renzo Piano. The Shard stands at the height of 309.6 metres, making it the tallest building in the United Kingdom and the sixth-tallest building in all of Europe. When you are in London, there are only a handful of places that offer you with decent views of the city, and the Shard is one of them."
         },
 
         "towerOfLondonCoords":{
         "lat":51.5081,
         "lng":-0.0759,
-        'description':"The White Tower, popularly known as the Tower of London, is definitely one of the must-see historical landmarks in London. It was constructed almost 1000 years ago in 1097, and this old monument has been used as an execution site, prison, and royal residence. The walls of the Tower of London are rich in history, making it one of the most-visited landmarks in the city. Aside from the history lessons taught by the Tower, there are many other activities and sites for you to do and see once inside the walls."
+        'description':"The White Tower, popularly known as the Tower of London, is definitely one of the must-see historical landmarks in London. It was constructed almost 1000 years ago in 1097, and this old monument has been used as an execution site, prison, and royal residence."
         },
 
         "towerBridgeCoords":{ 
@@ -42,19 +42,19 @@ let markers = [];
         "londonEyeCoords":{
         "lat":51.5033, 
         "lng":-0.1196,
-        'description':"The London Eye opened in December 1999, with official rides beginning in 2000. This is one of the more modern tourist attractions in London. You can locate the famous landmark in the heart of London, opposite the Palace of Westminster and Westminster Abbey. Looking at the London Eye for the first time, you might think it is just one large Ferris Wheel, but it is actually an Observation Wheel."
+        'description':"The London Eye opened in December 1999, with official rides beginning in 2000. This is one of the more modern tourist attractions in London. You can locate the famous landmark in the heart of London, opposite the Palace of Westminster and Westminster Abbey."
         },
 
         "kensingtonPalaceCoords" : 
         {"lat":51.5050, 
         "lng":-0.1877,
-        'description':"Kensington Palace is one of the historical landmarks of London, England. The famous rich history of the palace began when it was first built in 1605 by Sir George Coppin. The Palace was the birthplace of Queen Victoria, and today, it is the official London residence of the Duke and Duchess of Cambridge. Kensington Palace is a representation of over 400 years of royal history."
+        'description':"Kensington Palace is one of the historical landmarks of London, England. The famous rich history of the palace began when it was first built in 1605 by Sir George Coppin. The Palace was the birthplace of Queen Victoria, and today, it is the official London residence of the Duke and Duchess of Cambridge."
         },
 
         "britishMuseumCoords" : 
         {"lat":51.5194, 
         "lng":-0.1270,
-        'description':"The first thing you need to know about the British Museum is that it is the largest museum in England and also the oldest public museum in the world. It was established in 1753 with its first collection being that of the Irish Scientist Sir Hans Sloane. The Museum was opened to the public in 1759. It boasts of having collections of art from various parts of the world, including a collection of Roman, European, Etruscan, Middle Eastern and European galleries."
+        'description':"The British Museum is the largest museum in England and also the oldest public museum in the world. The Museum was opened to the public in 1759. It boasts of having collections of art from various parts of the world, including a collection of Roman, European, Etruscan, Middle Eastern and European galleries."
         },
 
         "vAndAMuseumCoords" : 
@@ -66,25 +66,25 @@ let markers = [];
         "naturalHistoryMuseumCoords" : 
         {"lat":51.4967, 
         "lng":-0.1764,
-        'description':"The Natural History Museum in London is one of the most impressive buildings in the city. It is home to more than 70 million objects, with at least thousands of items added each year. This makes the museum one of the largest collections of natural history in the world. The museum was founded in 1754, with the collections provided by Sir Hans Sloane. Sir Hans Sloane was the same man responsible for establishing the British Museum. He later realised that the natural history collection at the British Museum was not impressive enough, so he decided to fund a second one."
+        'description':"The Natural History Museum in London is one of the most impressive buildings in the city. It is home to more than 70 million objects, with at least thousands of items added each year. This makes the museum one of the largest collections of natural history in the world. The museum was founded in 1754, with the collections provided by Sir Hans Sloane."
         },
 
         "scienceMuseumCoords" : 
         {"lat":51.4978, 
         "lng":-0.1745,
-        'description':"The Science Museum of London was founded in 1857, and it is one of the historical landmarks in London. It is the most-visited science and technology-related museum in Europe, with more than 3 million people coming through it annually. The museum has more than 15,000 science-related objects on display, including the famous Apollo 10 command capsule and Stephenson's Rocket."
+        'description':"The Science Museum of London was founded in 1857, and it is one of the historical landmarks in London. It is the most-visited science and technology-related museum in Europe, with more than 3 million people coming through it annually. The museum has more than 15,000 science-related objects on display, including the famous Apollo 10 command capsule."
         },
 
         "britishTransportMuseumCoords" : 
         {"lat":51.5119, 
         "lng":-0.1216,
-        'description':"The famous transportation system in London is something that cannot be seen in every city in the world, and this is one way London stands out. The London Transport Museum has been in existence since the 1920s, and it contains 450,000 items collected over 200 years all about the transport history of the city. The transport museum is divided into many galleries. Starting from the first floor, the first thing you will notice is the 19th-century collection - from this floor onwards other major centuries are covered."
+        'description':"The famous transportation system in London is something that cannot be seen in every city in the world, and this is one way London stands out. The London Transport Museum has been in existence since the 1920s, and it contains 450,000 items collected over 200 years all about the transport history of the city."
         },
 
         "stPaulsCoords" : 
         {"lat":51.5138, 
         "lng":-0.0984,
-        'description':"St. Paul's Cathedral's construction started in 1675 and ended in 1710 by Sir Christopher Wren. It was designed in the baroque-architectural style. The same architect was in charge of the London Bridge and the Houses of Parliament. St. Paul's has been used as the location for many important events. For example, the wedding between Prince Charles and Diana in 1981 was held here, including the funeral of Winston Churchill and Margaret Thatcher."
+        'description':"St. Paul's Cathedral's construction started in 1675 and ended in 1710 by Sir Christopher Wren. St. Paul's has been used as the location for many important events. For example, the wedding between Prince Charles and Diana in 1981 was held here, including the funeral of Winston Churchill and Margaret Thatcher."
         },
 
         "londonZooCoords" : 
@@ -105,27 +105,27 @@ let markers = [];
 
         "royalObservatoryCoords" : 
         {"lat":51.4769, "lng":-0.0005, 
-        'description':"Rising like a beacon of time atop Greenwich Park, the Royal Observatory is home to the prime meridian (longitude 0° 0' 0'') and the Meridian Courtyard, where you can stand with your feet straddling the eastern and western hemispheres. You can also see the Great Equatorial Telescope (1893) inside the onion-domed observatory and explore space and time in the Weller Astronomy Galleries."
+        'description':"Rising like a beacon of time atop Greenwich Park, the Royal Observatory is home to the prime meridian (longitude 0° 0' 0'') and the Meridian Courtyard, where you can stand with your feet straddling the eastern and western hemispheres. You can also see the Great Equatorial Telescope (1893) inside the onion-domed observatory."
         },
 
         "greenwichParkCoords" : 
         {"lat":51.4769, "lng":-0.0015, 
-        'description':"Greenwich Park is one of London’s loveliest expanses of green, with a rose garden, picturesque walks, a 6th-century Anglo-Saxon burial ground and astonishing views of Canary Wharf from the crown of the hill. Covering 74 hectares, it's the oldest enclosed royal park and is partly the work of André Le Nôtre, the landscape architect who designed the palace gardens of Versailles. It's bisected by the imaginary meridian line and is also home to the Ranger's House and the Royal Observatory."
+        'description':"Greenwich Park is one of London’s loveliest expanses of green, with a rose garden, picturesque walks, a 6th-century Anglo-Saxon burial ground and astonishing views of Canary Wharf from the crown of the hill. Covering 74 hectares, it's the oldest enclosed royal park. It's bisected by the imaginary meridian line and is also home to the Ranger's House and the Royal Observatory."
         },
 
         "cuttySarkCoords" : 
         {"lat":51.4817, "lng":-0.0108, 
-        'description':"The Cutty Sark is the only remaining original Clipper ship in the World and is preserved in Greenwich, London. She was built in 1869 and served as a merchant vessel, travelling throughout the world. The Cutty Sark is thought to be one of the most beautiful ships ever made and makes a striking backdrop to the London Marathon runners as they pass her on the course."
+        'description':"The Cutty Sark is the only remaining original Clipper ship in the World and is preserved in Greenwich, London. She was built in 1869 and served as a merchant vessel, travelling throughout the world."
         },
 
         "hydeParkCoords" : 
         {"lat":51.5073, "lng":-0.1657, 
-        'description':"Hyde Park opened to the general public in 1637, and this was by order of King Charles, but it was not the reason why the park came into existence. In 1536, the park was acquired by Henry VIII, the first member of the royal family. The primary reason he acquired this large area of space was to turn it into a hunting ground. Hyde Park covers a ground area of about 350 acres, serving as the habitat for over 4,000 animals alongside ornamental flower gardens and a large lake."
+        'description':"In 1536, Hyde Park was acquired by Henry VIII. The primary reason he acquired this large area of space was to turn it into a hunting ground. By order of King Charles, the park opened to the general public in 1637. Hyde Park covers a ground area of about 350 acres, serving as the habitat for over 4,000 animals alongside ornamental flower gardens and a large lake."
         },
 
         "regentsParkCoords" : 
         {"lat":51.5313, "lng":-0.1570, 
-        'description':"Just like Hyde Park, Regent's Park was also acquired by Henry VIII and used as a hunting area until 1649. In 1811, John Nash was hired by King George IV to redesign the park for the royal family, which lead to the building of various infrastructure found in the park today. Regent's Park was not opened to the public until around the 1930s, and it has been popular ever since. The beauty of the 395-acre park is enough for you to visit it. It is home to many wildlife creatures, boasting of 200 species of birds and more than 650 waterfowl."
+        'description':"Just like Hyde Park, Regent's Park was also acquired by Henry VIII and used as a hunting area until 1649. Regent's Park was not opened to the public until around the 1930s, and it has been popular ever since. It is home to many wildlife creatures, boasting of 200 species of birds and more than 650 waterfowl."
         },
 
         "hollandParkCoords" : 
@@ -135,7 +135,7 @@ let markers = [];
 
         "greenParkCoords" : 
         {"lat":51.5039, "lng":-0.1439, 
-        'description':"Although situated so close to St James's Park, The Green Park is quite different in character. It is more peaceful with mature trees and grassland and is surrounded by Constitution Hill, Piccadilly and the Broad Walk. The Green Park was first recorded in 1554 as the place where a rebellion took place against the marriage of Mary I to Philip II of Spain. It was a famous duelling site until 1667 when Charles II bought an extra 40 acres and it became known as upper St James's Park."
+        'description':"Although situated so close to St James's Park, The Green Park is quite different in character. It is more peaceful with mature trees and grassland and is surrounded by Constitution Hill, Piccadilly and the Broad Walk. The Green Park was first recorded in 1554 as the place where a rebellion took place against the marriage of Mary I to Philip II of Spain."
         },
 
         "stJamesParkCoords" : 
@@ -145,7 +145,7 @@ let markers = [];
 
         "boroughMarketCoords" : 
         {"lat":51.5055, "lng":-0.0910, 
-        'description':"Borough Market is London's oldest food market, which has been in existence for over a century and dates back to the year 1014. This market is not only popular in the UK, but it is also one of the most famous markets in the world. The present structure of the market was built during the 1850s. Borough Market was built in a way that the environment is always kept in check. For example, low-energy lighting is used, and rainwater is collected and used to water the plants."
+        'description':"Borough Market is London's oldest food market, which has been in existence for over a century and dates back to the year 1014. This market is not only popular in the UK, but it is also one of the most famous markets in the world. The present structure of the market was built during the 1850s."
         },
 
         "greenwichMarketCoords" : 
@@ -155,12 +155,12 @@ let markers = [];
 
         "portobelloRoadMarketCoords" : 
         {"lat":51.5209, "lng":-0.2091, 
-        'description':"Dating back to the 19th century, Portobello is one of London’s oldest markets and it provide the setting for the 1999 movie Notting Hill starring Hugh Grant and Julia Roberts. Renowned for its antique stalls, the market is in full swing on Saturdays when more than 1,500 stalls compete for your attention. The market also heaves with stalls selling everything from vintage clothes to jewellery, street food to artwork."
+        'description':"Dating back to the 19th century, Portobello is one of London’s oldest markets and it provide the setting for the 1999 movie Notting Hill starring Hugh Grant and Julia Roberts. Renowned for its antique stalls, the market is in full swing on Saturdays when more than 1,500 stalls compete for your attention."
         },
 
         "camdenMarketCoords" : 
         {"lat":51.5414, "lng":-0.1465, 
-        'description':"Camden Market started off as a small arts and crafts fair in the backyard of Dingwalls. Originally it was temporary and only open on Sundays, however its popularity grew fast. Camden market has more than 1,000 places to shop, eat, drink and dance. Discover vintage fashion and original gift ideas, or simply pause for a bite to eat at one of the many cafes, bars and street-food stalls."
+        'description':"Camden Market started off as a small arts and crafts fair in the backyard of Dingwalls. Originally it was temporary and only open on Sundays, however its popularity grew fast."
         },
 
         "spitalfieldsMarketCoords" : 
@@ -170,7 +170,7 @@ let markers = [];
 
         "trafalgerSquareCoords" : 
         {"lat":51.5080, "lng":-0.1283, 
-        'description':"Trafalgar Square is a popular public square located in the City of Westminster, Central London. John Nash was the architect in charge of the square's design during the 1820s, and it was constructed in the 1830s. The public square is so popular to the extent that it has been featured in many award-winning movies, like the Children of Men, Casino Royale, and The Avengers. Trafalgar Square is home to other famous attractions, such as the National Gallery, Nelson's Column, and St. Martin-in-the-Fields."
+        'description':"Trafalgar Square is a popular public square located in the City of Westminster, Central London. John Nash was the architect in charge of the square's design during the 1820s, and it was constructed in the 1830s. Trafalgar Square is home to other famous attractions, such as the National Gallery, Nelson's Column, and St. Martin-in-the-Fields."
         },
 
         "nationalGalleryCoords" : 
@@ -223,7 +223,7 @@ let markers = [];
         },1000);
 
     }
-// Calls the previous functions
+// Change handler to pass in the previous functions
     const changehandler=function(e){
         const coordinates = myCoordinates[ this.value ];
         removeMarkers(); 
