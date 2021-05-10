@@ -5,6 +5,8 @@ Second Milestone Project for Code Institute
 
 I wanted to design a website with an interactive map at the heart of it. I chose the Google Maps API as it widely used around the world.
 
+[The live project can be viewed here.](https://jgibson90.github.io/MS2---London-Life/)
+
 ---
 
 # UX
@@ -13,7 +15,8 @@ I wanted to design a website with an interactive map at the heart of it. I chose
     - As a user, I want to immediately understand what is offered by the website
     - As a user, I want to be able to seamlessly navigate through the site to easily find
      more information
-    - As a user, I want to be able to easily interact with the site
+    - As a user, I want to be able to easily interact with the site and the applications within
+    - As a user, I want to be able to sign up to the Newsletter so that I can stay up to date every month
 
     I made the wireframe using Balsamiq which you can view the wireframe [here.](assets/docs/London-Life-Wireframe.pdf)
 
@@ -39,14 +42,15 @@ footer.
 ![](assets/images/colours.png)
 
 # Features
+- Responsive on all device sizes
 - Fixed navbar making navigation intuitive and simple
 - Interactive Google Maps API with dropdown menus to plot markers with info windows
-- Contact form 
+- Contact form with EmailJS integration 
 - Social media links
 
 ## Future Features
 - More map interactivity
-- EmailJS for the signup form
+- Backend Languages to handle the form data
 
 # Technologies used
 ## Languages used
@@ -55,16 +59,38 @@ footer.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Tools, Frameworks and Libraries used
-- [Git](https://git-scm.com/)
+- [Git](https://git-scm.com/) 
+    - Git was used for version control, using the Terminal to commit and push to GitHub
 - [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used to add icons to the footer for better UX amd aesthetics 
 - [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap was used to aid with the responsiveness of the website across multiple devices
 - [Google Fonts](https://fonts.google.com/)
+    - Google Fonts were used to import the Alegreya and Poppins fonts into the style.css file for headings and the main body respectively
 - [Balsamiq](https://balsamiq.com/) 
+    - Balsamiq was used to create the wireframes for the project
 
 # Testing
 I used the [CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JS Validator](https://esprima.org/demo/validate.htm) which passed with no errors. I also 
 used the [HTML Validator](https://validator.w3.org/) which brought up the following errors:
 - Section lacks heading. From line 94, column 5; to line 94, column 25
+
+## Testing User Stories from UX 
+1. As a user, I want to immediately understand what is offered by the website
+
+    1. Upon entering the website, the user is greeted with a navbar with three dropdown options to go to anywhere on the page 
+    2. The user has two options, to either select a link from the navbar or to scroll down, both of which lead to the same location
+
+2. As a user, I want to be able to seamlessly navigate through the site to easily find more information
+
+    1. The site has been designed to be fluid being made up of a single scrolling page. At the top of the page is a fixed navbar so the user can always find their way around the website
+
+3. As a user, I want to be able to easily interact with the site and the applications within
+
+    1. The Google Maps API has 3 seperate dropdown menus to choose from. Each one contains a different set of locations with corresponing markers and info windows which appear on the map with a Drop animation when they are selected
+    2. The sign up form has EmailJS integration and will notify the user if the inputs are not entered correctly. It also shows a modal on submitting the form.
+
+
 
 ### Fixes
 - Given that the Map is a section in it's own right I don't feel the need to add a heading as I think it will detract from the flow of the page.
