@@ -1,3 +1,4 @@
+// This function uses the form values from the website to populate the EmailJS Template I have made 
 function sendMail(form) {
     emailjs.send("gmail", "newsletter", {
         "from_name": form.fname.value + " " + lname.value,
@@ -13,4 +14,5 @@ function sendMail(form) {
         }
     );
     return false; // To block from loading a new page
-};
+}
+

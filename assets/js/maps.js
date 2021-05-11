@@ -183,7 +183,7 @@ let markers = [];
         'description':"Established in 1654 and set in London’s West End, Covent Garden is a major draw for visitors and Londoners who enjoy its many attractions, including shopping, theatre, restaurants, bars, history and culture."
         },
 
-    }
+    };
 // Sets the initial map location over London
     function initMap() {
     const map = new google.maps.Map( document.getElementById("map"), {
@@ -217,7 +217,7 @@ let markers = [];
         let content=[myCoordinates[value].description].join(', ');
         let infowindow=new google.maps.InfoWindow({maxWidth:400});
 
-        infowindow.setContent( content )
+        infowindow.setContent( content );
         infowindow.setPosition( marker.position );
         infowindow.open( map, marker );					
         },1000);
@@ -228,9 +228,9 @@ let markers = [];
         const coordinates = myCoordinates[ this.value ];
         removeMarkers(); 
         createMarker(coordinates, map, this.value ); 
-    }
+    };
 // Event listener to determine which location has been selected
     document.querySelectorAll('select.location-select').forEach( sel=>{
-        sel.addEventListener('change',changehandler)
-    })
+        sel.addEventListener('change',changehandler);
+    });
     }
