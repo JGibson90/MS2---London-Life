@@ -13,7 +13,7 @@
     <script type="text/javascript">
         (function() {
             emailjs.init("user_Ema93MrHgkhaKzeyzEF9K");
-        })();
+            })();
     </script>
     <title>London Life</title>
 </head>
@@ -133,23 +133,23 @@
     <section id="form-nav-link" class="container">
     <div class="row">
         <div class="container signup-form">
-            <form class="row form" onsubmit="return sendMail(this);">
+            <form class="row form" id="signup-form" onsubmit="return sendMail(this);">
                 <div class="col-12">
                     <h3 class="form-header">Sign up to our monthly newsletter!</h3>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="fname">First name:</label>
-                            <input type="text" class="form-control" id="fname" required>
+                            <input type="text" class="form-control" id="fname" pattern="[A-Za-z]" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lname">Last name:</label>
-                            <input type="text" class="form-control" id="lname" required>
+                            <input type="text" class="form-control" pattern="[A-Za-z]" id="lname" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="phone">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
+                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{11}" placeholder="000-000-0000" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="email">Email:</label>
@@ -157,17 +157,17 @@
                         </div>
                     </div>
                     <div class="col-12" id="form-button">
-                        <button class="btn btn-primary btn-lg text-center" data-toggle="modal" data-target="#myModal" type="submit">Send</button>
+                        <button class="btn btn-primary btn-lg text-center" id="submit" data-toggle="modal" data-target="#myModal" type="submit">Send</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLongTitle">Thank You!</h3>
+                    <h3 class="modal-title">Thank You!</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
