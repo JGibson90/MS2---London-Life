@@ -49,7 +49,7 @@ body {
 
 /*----------------------------------------------Hero image and quotes*/
 .quote-bg-img {
-    background: url(../images/quote-bg-img.jpg);
+    background: url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     height: 92vh;
     width: 100%;
