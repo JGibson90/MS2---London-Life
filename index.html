@@ -40,34 +40,7 @@
         </nav>
     </header>
     <section>
-        <div class="quote-bg-img" id="slideshow">
-            <!-- <div>
-                <img src="assets/images/quote-bg-img.jpg" alt="The London Eye by the River Thames">
-            </div>
-            <div>
-                <img src="assets/images/img2.jpg" alt="Tower Bridge at sunset">
-            </div>
-            <div>
-                <img src="assets/images/img3.jpg" alt="London skyline at sunset">
-            </div>
-            <div>
-                <img src="assets/images/img4.jpg" alt="Tower Bridge at Night">
-            </div>
-            <div>
-                <img src="assets/images/img5.jpg" alt="London train station">
-            </div>
-            <div>
-                <img src="assets/images/img6.jpg" alt="Quiet old London side street">
-            </div>
-            <div>
-                <img src="assets/images/img7.jpg" alt="View of St Pauls Cathedral from the Millenium Bridge">
-            </div>
-            <div>
-                <img src="assets/images/img8.jpg" alt="St Pauls Cathedral">
-            </div>
-            <div>
-                <img src="assets/images/img9.jpg" alt="London skyline during daytime">
-            </div> -->
+        <div class="quote-bg-img">
         </div>
         <h1 class="hero-quote"><em>"When a man is tired of London, he is tired of life; 
                 for there is in London all that life can afford"</em></h1>
@@ -132,53 +105,35 @@
     </section>
     <section id="form-nav-link" class="container">
     <div class="row">
-        <div class="container signup-form">
+        <div class="container newsletter-form">
             <form class="row form" id="signup-form" onsubmit="return sendMail(this);">
                 <div class="col-12">
                     <h3 class="form-header">Sign up to our monthly newsletter!</h3>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="fname">First name:</label>
-                            <input type="text" class="form-control" id="fname" pattern="[A-Za-z]{1,20}" required>
+                            <input type="text" class="form-control" id="fname" placeholder="John" pattern="[A-Za-z]{1,20}" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lname">Last name:</label>
-                            <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{1,20}" required>
+                            <input type="text" class="form-control" id="lname" placeholder="Doe" pattern="[A-Za-z]{1,20}" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="phone">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{11}" placeholder="000-000-0000" required>
+                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{11}" placeholder="xxxxx-xxxxxx" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
                         </div>
                     </div>
                     <div class="col-12" id="form-button">
-                        <button class="btn btn-primary btn-lg text-center" id="submit" data-toggle="modal" data-target="#myModal" type="submit">Send</button>
+                        <button class="btn btn-primary btn-lg text-center" id="form-submit" type="submit">Send</button>
                     </div>
                 </div>
             </form>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Thank You!</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Thanks for signing up to our newsletter! Check your email for a confirmation.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="modal-close-button" data-dismiss="modal">Close</button>
-                </div>
-            </div>
         </div>
     </div>
     </section>

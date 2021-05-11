@@ -3,10 +3,24 @@ Second Milestone Project for Code Institute
 
  ![](assets/images/devices.PNG)
 
-I wanted to design a website with an interactive map at the heart of it. I chose the Google Maps API as it widely used around the world.
+I wanted to design a website with an interactive map at the heart of it. I chose the Google Maps API as it widely used around the world. 
+I chose London to be the subject of the website as it is somewhere close to my heart having lived there for a few years and it has so much to offer. 
+I wanted to be able to show and give information about various places and attractions in London to someone who may never have visited there or for 
+someone who wanted to learn about some of the things that a visitor might want to know. I chose the EmailJS API so I could customize an auto reply 
+template so if a vistor signed up to the newsletter they would be notified soon after. 
 
 [The live project can be viewed here.](https://jgibson90.github.io/MS2---London-Life/)
 
+---
+# Contents
+- [UX](#ux)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Special Thanks](#special-thanks)
 ---
 
 # UX
@@ -18,7 +32,7 @@ I wanted to design a website with an interactive map at the heart of it. I chose
     - As a user, I want to be able to easily interact with the site and the applications within
     - As a user, I want to be able to sign up to the Newsletter so that I can stay up to date every month
 
-    I made the wireframe using Balsamiq which you can view the wireframe [here.](assets/docs/London-Life-Wireframe.pdf)
+    I made the wireframe using Balsamiq which you can view the wireframe [here.](assets/images/Wireframe.png)
 
 ## Design Choices
 ---
@@ -42,15 +56,16 @@ footer.
 ![](assets/images/colours.png)
 
 # Features
-- Responsive on all device sizes
-- Fixed navbar making navigation intuitive and simple
-- Interactive Google Maps API with dropdown menus to plot markers with info windows
-- Contact form with EmailJS integration 
-- Social media links
+- Responsive on all device sizes.
+- Fixed navbar making navigation intuitive and simple.
+- Interactive Google Maps API with dropdown menus to plot markers with info windows.
+- Contact form with EmailJS integration.
+- Social media links.
 
 ## Future Features
-- More map interactivity
-- Backend Languages to handle the form data
+- More map interactivity.
+- Modals for both successful and unsuccessful form submissions.
+- Backend Languages to handle the form data.
 
 # Technologies used
 ## Languages used
@@ -60,20 +75,33 @@ footer.
 
 ## Tools, Frameworks and Libraries used
 - [Git](https://git-scm.com/) 
-    - Git was used for version control, using the Terminal to commit and push to GitHub
+    - Git was used for version control, using the Terminal to commit and push to GitHub.
 - [Font Awesome](https://fontawesome.com/)
-    - Font Awesome was used to add icons to the footer for better UX amd aesthetics 
+    - Font Awesome was used to add icons to the footer for better UX amd aesthetics.
 - [Bootstrap](https://getbootstrap.com/)
-    - Bootstrap was used to aid with the responsiveness of the website across multiple devices
+    - Bootstrap was used to aid with the responsiveness of the website across multiple devices.
+- [Google Maps](https://developers.google.com/maps) API
+    - I chose the Google Maps API for my interactive map as it has over a billion monthly users.
+- [EmailJS](https://www.emailjs.com/) API 
+    - I chose the EmailJS API to handle my newsletter signup form as it is simple to use and has many options for customization as a developer.
 - [Google Fonts](https://fonts.google.com/)
-    - Google Fonts were used to import the Alegreya and Poppins fonts into the style.css file for headings and the main body respectively
+    - Google Fonts were used to import the Alegreya and Poppins fonts into the style.css file for headings and the main body respectively.
 - [Balsamiq](https://balsamiq.com/) 
-    - Balsamiq was used to create the wireframes for the project
+    - Balsamiq was used to create the wireframes for the project.
 
 # Testing
-I used the [CSS Validator](https://jigsaw.w3.org/css-validator/) and the [JS Validator](https://esprima.org/demo/validate.htm) which passed with no errors. I also 
-used the [HTML Validator](https://validator.w3.org/) which brought up the following errors:
-- Section lacks heading. From line 94, column 5; to line 94, column 25
+I used the [CSS Validator](https://jigsaw.w3.org/css-validator/) which brought up two errors which can be seen [here](assets/images/CSSTest.PNG). I also 
+used the [HTML Validator](https://validator.w3.org/) which brought up these three warnings which can be seen [here.](assets/images/HTMLTest.PNG)
+### Fixes
+- I simply removed the comma in the middle of the two `margin:0, auto` declarations in the `.btn` and `#form-button` sections of my style.css.
+- Given that the Map is a section in it's own right I don't feel the need to add a heading as I think it will detract from the flow of the page.
+- With regards to the two warnings about the type attribute being unnecessary for JavaScript resources, I removed the `type` attribute and it caused the code to fail so I have left them in place.
+
+## JSHint Testing
+I ran my JavaScript through [JSHint](https://jshint.com/) and it displayed these warnings for my [maps.js file.](assets/images/JSHint1.PNG)
+    - After reviewing these I added the missing semicolons in the maps.js file.
+
+I also ran my sendEmail.js file through JSHint and it returned no warnings or errors which can be seen [here.](assets/images/JSHint2.PNG)
 
 ## Testing User Stories from UX 
 1. As a user, I want to immediately understand what is offered by the website
@@ -88,21 +116,27 @@ used the [HTML Validator](https://validator.w3.org/) which brought up the follow
 3. As a user, I want to be able to easily interact with the site and the applications within
 
     1. The Google Maps API has 3 seperate dropdown menus to choose from. Each one contains a different set of locations with corresponing markers and info windows which appear on the map with a Drop animation when they are selected
-    2. The sign up form has EmailJS integration and will notify the user if the inputs are not entered correctly. It also shows a modal on submitting the form.
+    2. The sign up form has EmailJS integration and will notify the user if the inputs are not entered correctly. Upon successfully submitting the form, an auto reply is sent to the user confirming that they have signed up to the newsletter successfully.
 
 
+## Further Testing 
+- The project was tested on Google Chrome, Mozilla Firefox, Safari for iOS and Microsoft Edge.
+- The project was viewed on a variety of different devices such as Desktop, Laptop, iPhone 7, iPhone 8, iPhone 11, and iPad.
+- I asked friends and family to view the project and give feedback on any user experience issues and/or bugs. 
 
-### Fixes
-- Given that the Map is a section in it's own right I don't feel the need to add a heading as I think it will detract from the flow of the page.
+## EmailJS Testing
+- Firstly I set up my two templates for my emails, one being the auto reply to the user and the other being the one sent to the London Life email which can be seen [here](assets/images/EmailJSTemplate2.PNG) and [here](assets/images/EmailJSTemplate1.PNG) respectively.
+- Then I filled in the form with my details and checked to see if I recieved both the auto reply and the confirmation that there was a new sign up to the newsletter. Proof of which can be seen [here](assets/images/EmailJSTest-3.PNG), [here](assets/images/EmailJSTest-4.PNG) and [here.](assets/images/EmailJSTest-5.PNG)
 
 # Bugs
-Following on from Testing I also encoutered these bugs, below each one are the
-relevant fixes. 
+Following on from Testing I also encoutered these bugs.
 ## During development
 - Signup form refused to center despite Bootstrap grid and CSS styling
     - Shift + f5 to clear the cache 
 - Google Maps markers and info windows not appearing in the map
     - Tutor Support, my mentor and Stack Overflow helped me decipher where I was going wrong
+- On iPhone the phone input on the form could not be entered correctly due to the pattern I had specified
+    - I removed the hyphens from the pattern to fix the issue
 
 
 # Deployment
@@ -131,6 +165,8 @@ under the **GitHub pages** section
 ## Code
 - I used [Bootstrap 4](https://getbootstrap.com/) to make the site
 responsive on different devices.
+
+- I used the EmailJS tutorial from Code Institutes course to help write my EmailJS function.
 
 - I was provided the fix to add infoWindows to my Markers on Stack Overflow, you can view it [here.](https://stackoverflow.com/questions/66689094/how-can-i-add-info-windows-to-a-marker-event-listener)
  
